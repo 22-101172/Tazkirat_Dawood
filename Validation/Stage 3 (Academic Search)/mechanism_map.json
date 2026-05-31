@@ -1,0 +1,299 @@
+{
+  "dermatological_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Immunomodulatory",
+    "Antimicrobial",
+    "Wound healing",
+    "Antiproliferative",
+    "Barrier function modulation",
+    "Anti-pruritic"
+  ],
+  "gastrointestinal_conditions": [
+    "anti-inflammatory",
+    "antispasmodic",
+    "gut microbiota modulation",
+    "mucosal barrier protection",
+    "gastrointestinal motility regulation",
+    "antioxidant",
+    "immunomodulation"
+  ],
+  "hair_scalp_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Hair growth promotion",
+    "Antimicrobial",
+    "Vasodilation",
+    "Androgen modulation",
+    "Sebum regulation",
+    "Keratinocyte proliferation"
+  ],
+  "metabolic_conditions": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Insulin sensitization",
+    "Glucose homeostasis",
+    "Lipid metabolism regulation",
+    "Adipogenesis inhibition",
+    "Gut microbiota modulation",
+    "Hepatoprotective"
+  ],
+  "musculoskeletal_conditions": [
+    "Anti-inflammatory",
+    "Analgesic",
+    "Antioxidant",
+    "Chondroprotective",
+    "Immunomodulatory",
+    "Bone remodeling",
+    "Collagen synthesis",
+    "Antifibrotic"
+  ],
+  "neurological_conditions": [
+    "Neuroprotection",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Apoptosis inhibition",
+    "Neurogenesis promotion",
+    "Synaptic plasticity modulation",
+    "Mitochondrial function regulation",
+    "Autophagy modulation"
+  ],
+  "renal_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Antifibrotic",
+    "Renoprotective",
+    "Immunomodulatory",
+    "Diuretic",
+    "Blood pressure regulation"
+  ],
+  "respiratory_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Immunomodulatory",
+    "Bronchodilatory",
+    "Antimicrobial",
+    "Mucolytic",
+    "Antiallergic"
+  ],
+  "hepatic_conditions": [
+    "Hepatoprotective",
+    "antioxidant",
+    "anti-inflammatory",
+    "antifibrotic",
+    "lipid metabolism regulation",
+    "apoptosis inhibition",
+    "immunomodulatory"
+  ],
+  "infectious_conditions": [
+    "Antimicrobial",
+    "Immunomodulatory",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Biofilm inhibition",
+    "Antiviral",
+    "Quorum sensing inhibition"
+  ],
+  "reproductive_conditions": [
+    "Hormonal regulation",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Neuroendocrine modulation",
+    "Immunomodulation",
+    "Angiogenesis modulation",
+    "Metabolic regulation",
+    "Apoptosis modulation"
+  ],
+  "urological_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Antimicrobial",
+    "Immunomodulatory",
+    "Smooth muscle relaxation",
+    "Antiproliferative",
+    "Diuretic",
+    "Analgesic"
+  ],
+  "wound_healing": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Collagen synthesis",
+    "Angiogenesis",
+    "Cell proliferation",
+    "Re-epithelialization",
+    "Extracellular matrix remodeling",
+    "Antimicrobial"
+  ],
+  "oncological_conditions": [
+    "Apoptosis induction",
+    "Angiogenesis inhibition",
+    "Cell cycle arrest",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Metastasis inhibition",
+    "Immunomodulation",
+    "Autophagy modulation"
+  ],
+  "otolaryngological_conditions": [
+    "anti-inflammatory",
+    "antimicrobial",
+    "immunomodulatory",
+    "antioxidant",
+    "neuroprotective",
+    "mucolytic",
+    "anti-allergic"
+  ],
+  "parasitic_conditions": [
+    "Antiparasitic",
+    "Anthelmintic",
+    "Antiprotozoal",
+    "Immunomodulatory",
+    "Cytotoxicity",
+    "Enzyme inhibition",
+    "Oxidative stress induction",
+    "Anti-inflammatory"
+  ],
+  "oedema_and_fluid_conditions": [
+    "Diuretic activity",
+    "Anti-inflammatory",
+    "Vascular permeability modulation",
+    "Natriuretic activity",
+    "Antioxidant",
+    "Renal function modulation",
+    "Lymphatic drainage promotion"
+  ],
+  "cardiovascular_conditions": [
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Vasodilation",
+    "Lipid-lowering",
+    "Antiplatelet",
+    "Endothelial protection",
+    "Myocardial protection",
+    "Antiarrhythmic"
+  ],
+  "inflammatory_conditions": [
+    "Anti-inflammatory",
+    "Immunomodulation",
+    "Antioxidant",
+    "Cytokine regulation",
+    "NF-\u03baB pathway inhibition",
+    "Prostaglandin synthesis inhibition",
+    "Matrix metalloproteinase inhibition"
+  ],
+  "poisoning_and_toxicity": [
+    "Antioxidant",
+    "Detoxification",
+    "Hepatoprotective",
+    "Nephroprotective",
+    "Anti-inflammatory",
+    "Chelation",
+    "Cytoprotective",
+    "Apoptosis inhibition"
+  ],
+  "haematological_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Immunomodulatory",
+    "Antineoplastic",
+    "Hematopoiesis regulation",
+    "Anti-coagulant",
+    "Apoptosis induction"
+  ],
+  "oral_dental_conditions": [
+    "Antimicrobial",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Wound healing",
+    "Analgesic",
+    "Biofilm inhibition",
+    "Immunomodulatory",
+    "Tissue regeneration"
+  ],
+  "fever_and_systemic_illness": [
+    "Anti-inflammatory",
+    "Antipyretic",
+    "Immunomodulation",
+    "Antioxidant",
+    "Antimicrobial",
+    "Cytokine regulation",
+    "Antiviral",
+    "Analgesic"
+  ],
+  "pain_management": [
+    "Anti-inflammatory",
+    "Analgesic",
+    "Antioxidant",
+    "Neuromodulation",
+    "Ion channel modulation",
+    "Prostaglandin synthesis inhibition",
+    "Antinociceptive"
+  ],
+  "ophthalmological_conditions": [
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Neuroprotection",
+    "Angiogenesis inhibition",
+    "Immunomodulation",
+    "Apoptosis inhibition",
+    "Anti-fibrotic",
+    "Vasoprotection"
+  ],
+  "general_weakness_fatigue": [
+    "Mitochondrial biogenesis",
+    "Antioxidant",
+    "Anti-inflammatory",
+    "HPA axis regulation",
+    "Neurotransmitter modulation",
+    "Immunomodulation",
+    "Glucose metabolism",
+    "Muscle energy metabolism"
+  ],
+  "psychological_conditions": [
+    "Neurotransmitter modulation",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Neuroprotection",
+    "HPA axis modulation",
+    "Mitochondrial function modulation",
+    "Gut-brain axis modulation"
+  ],
+  "humoral_conditions": [
+    "Immunomodulation",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Diuretic",
+    "Anticoagulant",
+    "Hypoglycemic",
+    "Vasodilation",
+    "Cytokine regulation"
+  ],
+  "endocrine_conditions": [
+    "Hormone modulation",
+    "Glucose metabolism",
+    "Insulin sensitization",
+    "Anti-inflammatory",
+    "Antioxidant",
+    "Lipid metabolism",
+    "Enzyme inhibition",
+    "Receptor modulation"
+  ],
+  "nutritional_deficiency": [
+    "Enhanced nutrient absorption",
+    "Antioxidant activity",
+    "Anti-inflammatory effects",
+    "Immunomodulation",
+    "Gastrointestinal mucosal integrity",
+    "Hepatoprotective activity",
+    "Enzyme activity modulation"
+  ],
+  "treatment_response_issues": [
+    "Immunomodulation",
+    "Drug metabolism modulation",
+    "Antioxidant",
+    "Anti-inflammatory",
+    "Multidrug resistance reversal",
+    "Cytoprotection",
+    "Apoptosis induction"
+  ]
+}
