@@ -1,7 +1,0 @@
-__pycache__/
-*.pyc
-.DS_Store
-.venv/
-.ipynb_checkpoints/
-*.log
-.pycache_check/
