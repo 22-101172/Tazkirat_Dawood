@@ -1,0 +1,309 @@
+SAMPLE_MODE (seed=42): 3 block(s) of 100 rows out of 7362 total.
+  - rows 204..303 (entry_id 39..52)
+  - rows 912..1011 (entry_id 197..217)
+  - rows 5238..5337 (entry_id 1304..1319)
+  [1/300] entry_id=39 papers=0 -> No Modern Equivalent
+  [2/300] entry_id=39 papers=0 -> Insufficient Evidence
+  [3/300] entry_id=39 papers=0 -> Insufficient Evidence
+  [4/300] entry_id=39 papers=1 -> Insufficient Evidence
+  [5/300] entry_id=39 papers=0 -> Insufficient Evidence
+  [6/300] entry_id=39 papers=2 -> Insufficient Evidence
+  [7/300] entry_id=43 papers=1 -> Disagree
+  [8/300] entry_id=43 papers=1 -> Disagree
+  [9/300] entry_id=43 papers=6 -> Neutral
+  [10/300] entry_id=43 papers=2 -> Insufficient Evidence
+  [11/300] entry_id=43 papers=6 -> Insufficient Evidence
+  [12/300] entry_id=43 papers=4 -> Agree
+  [13/300] entry_id=43 papers=4 -> Insufficient Evidence
+  [14/300] entry_id=43 papers=6 -> Neutral
+  [15/300] entry_id=43 papers=0 -> Insufficient Evidence
+  [16/300] entry_id=43 papers=2 -> Insufficient Evidence
+  [17/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [18/300] entry_id=46 papers=2 -> Agree
+  [19/300] entry_id=46 papers=3 -> Neutral
+  [20/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [21/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [22/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [23/300] entry_id=46 papers=1 -> Insufficient Evidence
+  [24/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [25/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [26/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [27/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [28/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [29/300] entry_id=46 papers=1 -> Neutral
+  [30/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [31/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [32/300] entry_id=47 papers=2 -> Neutral
+  [33/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [34/300] entry_id=47 papers=3 -> Insufficient Evidence
+  [35/300] entry_id=47 papers=3 -> Neutral
+  [36/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [37/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [38/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [39/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [40/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [41/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [42/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [43/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [44/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [45/300] entry_id=48 papers=1 -> Neutral
+  [46/300] entry_id=48 papers=3 -> Agree
+  [47/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [48/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [49/300] entry_id=48 papers=1 -> Neutral
+    [http retry] backing off 2.3s (attempt 1)
+  [50/300] entry_id=48 papers=1 -> Neutral
+  [51/300] entry_id=48 papers=3 -> Neutral
+  [52/300] entry_id=48 papers=2 -> Neutral
+    [http retry] backing off 2.3s (attempt 1)
+  [53/300] entry_id=48 papers=1 -> Neutral
+  [54/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [55/300] entry_id=48 papers=2 -> Neutral
+  [56/300] entry_id=48 papers=2 -> Neutral
+  [57/300] entry_id=48 papers=2 -> Insufficient Evidence
+  [58/300] entry_id=49 papers=2 -> Neutral
+  [59/300] entry_id=49 papers=3 -> Neutral
+  [60/300] entry_id=49 papers=1 -> Neutral
+  [61/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [62/300] entry_id=49 papers=1 -> Insufficient Evidence
+  [63/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [64/300] entry_id=49 papers=2 -> Neutral
+  [65/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [66/300] entry_id=50 papers=0 -> No Modern Equivalent
+  [67/300] entry_id=50 papers=5 -> Agree
+  [68/300] entry_id=50 papers=4 -> Neutral
+  [69/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [70/300] entry_id=50 papers=1 -> Neutral
+  [71/300] entry_id=50 papers=1 -> Agree
+  [72/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [73/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [74/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [75/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [76/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [77/300] entry_id=51 papers=1 -> Neutral
+  [78/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [79/300] entry_id=51 papers=3 -> Neutral
+  [80/300] entry_id=51 papers=2 -> Agree
+  [81/300] entry_id=51 papers=2 -> Neutral
+  [82/300] entry_id=51 papers=1 -> Neutral
+  [83/300] entry_id=51 papers=1 -> Neutral
+  [84/300] entry_id=51 papers=1 -> Neutral
+  [85/300] entry_id=51 papers=3 -> Neutral
+  [86/300] entry_id=51 papers=1 -> Neutral
+  [87/300] entry_id=51 papers=1 -> Neutral
+  [88/300] entry_id=51 papers=2 -> Neutral
+  [89/300] entry_id=51 papers=4 -> Strongly Agree
+  [90/300] entry_id=51 papers=3 -> Neutral
+  [91/300] entry_id=51 papers=3 -> Neutral
+  [92/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [93/300] entry_id=51 papers=1 -> Neutral
+  [94/300] entry_id=51 papers=1 -> Neutral
+  [95/300] entry_id=51 papers=1 -> Agree
+  [96/300] entry_id=51 papers=2 -> Neutral
+  [97/300] entry_id=51 papers=2 -> Neutral
+  [98/300] entry_id=51 papers=1 -> Neutral
+  [99/300] entry_id=51 papers=1 -> Neutral
+  [100/300] entry_id=52 papers=0 -> Insufficient Evidence
+  [101/300] entry_id=197 papers=3 -> Neutral
+  [102/300] entry_id=197 papers=0 -> Insufficient Evidence
+  [103/300] entry_id=197 papers=0 -> Insufficient Evidence
+  [104/300] entry_id=197 papers=3 -> Agree
+  [105/300] entry_id=197 papers=0 -> Insufficient Evidence
+  [106/300] entry_id=197 papers=2 -> Insufficient Evidence
+  [107/300] entry_id=197 papers=5 -> Neutral
+  [108/300] entry_id=197 papers=4 -> Neutral
+  [109/300] entry_id=197 papers=0 -> Insufficient Evidence
+  [110/300] entry_id=197 papers=3 -> Neutral
+  [111/300] entry_id=197 papers=4 -> Agree
+  [112/300] entry_id=197 papers=3 -> Neutral
+  [113/300] entry_id=197 papers=2 -> Neutral
+  [114/300] entry_id=197 papers=0 -> No Modern Equivalent
+  [115/300] entry_id=197 papers=2 -> Insufficient Evidence
+  [116/300] entry_id=198 papers=4 -> Agree
+  [117/300] entry_id=198 papers=3 -> Neutral
+  [118/300] entry_id=198 papers=3 -> Neutral
+  [119/300] entry_id=198 papers=1 -> Neutral
+  [120/300] entry_id=198 papers=5 -> Neutral
+  [121/300] entry_id=198 papers=3 -> Neutral
+  [122/300] entry_id=198 papers=2 -> Neutral
+  [123/300] entry_id=198 papers=1 -> Neutral
+  [124/300] entry_id=198 papers=2 -> Neutral
+  [125/300] entry_id=198 papers=4 -> Neutral
+  [126/300] entry_id=198 papers=2 -> Neutral
+  [127/300] entry_id=198 papers=3 -> Insufficient Evidence
+  [128/300] entry_id=198 papers=2 -> Insufficient Evidence
+  [129/300] entry_id=198 papers=4 -> Neutral
+  [130/300] entry_id=199 papers=1 -> Agree
+  [131/300] entry_id=199 papers=1 -> Neutral
+  [132/300] entry_id=199 papers=1 -> Insufficient Evidence
+  [133/300] entry_id=199 papers=1 -> Neutral
+  [134/300] entry_id=199 papers=1 -> Neutral
+    [http retry] backing off 2.3s (attempt 1)
+  [135/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [136/300] entry_id=199 papers=3 -> Neutral
+  [137/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [138/300] entry_id=199 papers=2 -> Agree
+  [139/300] entry_id=199 papers=1 -> Neutral
+  [140/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [141/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [142/300] entry_id=203 papers=2 -> Neutral
+  [143/300] entry_id=203 papers=2 -> Agree
+  [144/300] entry_id=203 papers=7 -> Neutral
+  [145/300] entry_id=203 papers=3 -> Neutral
+  [146/300] entry_id=203 papers=3 -> Neutral
+  [147/300] entry_id=203 papers=4 -> Neutral
+  [148/300] entry_id=203 papers=3 -> Neutral
+  [149/300] entry_id=203 papers=7 -> Neutral
+  [150/300] entry_id=203 papers=8 -> Neutral
+  [151/300] entry_id=203 papers=4 -> Strongly Agree
+  [152/300] entry_id=203 papers=10 -> Agree
+  [153/300] entry_id=203 papers=3 -> Insufficient Evidence
+  [154/300] entry_id=203 papers=3 -> Neutral
+  [155/300] entry_id=203 papers=3 -> Neutral
+  [156/300] entry_id=203 papers=8 -> Strongly Agree
+  [157/300] entry_id=203 papers=4 -> Neutral
+  [158/300] entry_id=203 papers=4 -> Neutral
+  [159/300] entry_id=203 papers=0 -> Insufficient Evidence
+  [160/300] entry_id=203 papers=3 -> Neutral
+  [161/300] entry_id=203 papers=3 -> Neutral
+  [162/300] entry_id=203 papers=2 -> Agree
+  [163/300] entry_id=203 papers=1 -> Insufficient Evidence
+  [164/300] entry_id=203 papers=4 -> Strongly Agree
+  [165/300] entry_id=203 papers=4 -> Neutral
+  [166/300] entry_id=203 papers=4 -> Neutral
+  [167/300] entry_id=215 papers=2 -> Neutral
+  [168/300] entry_id=215 papers=2 -> Neutral
+  [169/300] entry_id=215 papers=2 -> Neutral
+  [170/300] entry_id=215 papers=3 -> Neutral
+  [171/300] entry_id=215 papers=3 -> Neutral
+  [172/300] entry_id=215 papers=2 -> Neutral
+  [173/300] entry_id=215 papers=2 -> Insufficient Evidence
+  [174/300] entry_id=215 papers=2 -> Neutral
+  [175/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [176/300] entry_id=215 papers=3 -> Insufficient Evidence
+  [177/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [178/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [179/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [180/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [181/300] entry_id=215 papers=0 -> No Modern Equivalent
+  [182/300] entry_id=215 papers=3 -> Insufficient Evidence
+  [183/300] entry_id=216 papers=3 -> Insufficient Evidence
+  [184/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [185/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [186/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [187/300] entry_id=216 papers=2 -> Insufficient Evidence
+  [188/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [189/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [190/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [191/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [192/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [193/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [194/300] entry_id=217 papers=0 -> Insufficient Evidence
+  [195/300] entry_id=217 papers=0 -> Insufficient Evidence
+  [196/300] entry_id=217 papers=0 -> Insufficient Evidence
+  [197/300] entry_id=217 papers=1 -> Neutral
+  [198/300] entry_id=217 papers=6 -> Agree
+  [199/300] entry_id=217 papers=8 -> Agree
+  [200/300] entry_id=217 papers=1 -> Insufficient Evidence
+  [201/300] entry_id=1304 papers=3 -> Insufficient Evidence
+  [202/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [203/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [204/300] entry_id=1304 papers=7 -> Neutral
+  [205/300] entry_id=1304 papers=2 -> Insufficient Evidence
+  [206/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [207/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [208/300] entry_id=1304 papers=2 -> Neutral
+  [209/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [210/300] entry_id=1304 papers=8 -> Neutral
+  [211/300] entry_id=1305 papers=2 -> Insufficient Evidence
+  [212/300] entry_id=1305 papers=1 -> Neutral
+  [213/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [214/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [215/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [216/300] entry_id=1308 papers=4 -> Neutral
+  [217/300] entry_id=1308 papers=2 -> Insufficient Evidence
+  [218/300] entry_id=1308 papers=3 -> Neutral
+  [219/300] entry_id=1308 papers=3 -> Neutral
+  [220/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [221/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [222/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [223/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [224/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [225/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [226/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [227/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [228/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [229/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [230/300] entry_id=1316 papers=4 -> Strongly Agree
+  [231/300] entry_id=1316 papers=2 -> Neutral
+  [232/300] entry_id=1316 papers=1 -> Agree
+  [233/300] entry_id=1316 papers=3 -> Neutral
+  [234/300] entry_id=1316 papers=1 -> Insufficient Evidence
+  [235/300] entry_id=1316 papers=3 -> Agree
+  [236/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [237/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [238/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [239/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [240/300] entry_id=1316 papers=2 -> Neutral
+  [241/300] entry_id=1316 papers=1 -> Insufficient Evidence
+  [242/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [243/300] entry_id=1316 papers=3 -> Agree
+  [244/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [245/300] entry_id=1316 papers=4 -> Insufficient Evidence
+  [246/300] entry_id=1317 papers=1 -> Insufficient Evidence
+  [247/300] entry_id=1317 papers=2 -> Neutral
+  [248/300] entry_id=1317 papers=7 -> Strongly Agree
+  [249/300] entry_id=1317 papers=1 -> Neutral
+  [250/300] entry_id=1317 papers=1 -> Insufficient Evidence
+  [251/300] entry_id=1317 papers=5 -> Neutral
+  [252/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [253/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [254/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [255/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [256/300] entry_id=1317 papers=7 -> Neutral
+  [257/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [258/300] entry_id=1317 papers=3 -> Agree
+  [259/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [260/300] entry_id=1317 papers=7 -> Neutral
+  [261/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [262/300] entry_id=1318 papers=1 -> Neutral
+  [263/300] entry_id=1318 papers=1 -> Insufficient Evidence
+  [264/300] entry_id=1318 papers=1 -> Neutral
+  [265/300] entry_id=1318 papers=1 -> Insufficient Evidence
+  [266/300] entry_id=1318 papers=3 -> Neutral
+  [267/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [268/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [269/300] entry_id=1318 papers=3 -> Neutral
+  [270/300] entry_id=1318 papers=2 -> Neutral
+  [271/300] entry_id=1318 papers=5 -> Neutral
+  [272/300] entry_id=1318 papers=4 -> Neutral
+  [273/300] entry_id=1318 papers=2 -> Neutral
+  [274/300] entry_id=1318 papers=2 -> Neutral
+  [275/300] entry_id=1318 papers=2 -> Agree
+  [276/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [277/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [278/300] entry_id=1318 papers=2 -> Neutral
+  [279/300] entry_id=1318 papers=1 -> Neutral
+  [280/300] entry_id=1318 papers=3 -> Neutral
+  [281/300] entry_id=1318 papers=5 -> Neutral
+  [282/300] entry_id=1318 papers=1 -> Neutral
+  [283/300] entry_id=1318 papers=2 -> Neutral
+    [http retry] backing off 2.5s (attempt 1)
+  [284/300] entry_id=1318 papers=2 -> Neutral
+  [285/300] entry_id=1318 papers=5 -> Neutral
+  [286/300] entry_id=1318 papers=10 -> Neutral
+  [287/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [288/300] entry_id=1318 papers=1 -> Agree
+  [289/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [290/300] entry_id=1318 papers=3 -> Agree
+  [291/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [292/300] entry_id=1318 papers=2 -> Neutral
+  [293/300] entry_id=1319 papers=3 -> Neutral
+  [294/300] entry_id=1319 papers=3 -> Neutral
+  [295/300] entry_id=1319 papers=4 -> Neutral
+  [296/300] entry_id=1319 papers=1 -> Insufficient Evidence
+  [297/300] entry_id=1319 papers=2 -> Neutral
+  [298/300] entry_id=1319 papers=3 -> Neutral
+  [299/300] entry_id=1319 papers=2 -> Neutral
+  [300/300] entry_id=1319 papers=1 -> Neutral
+Done. 300 total rows in /Users/mohanadeladl/Desktop/Tazkirat dawood/data/factcheck_retrieve_judge_v1_expB.csv

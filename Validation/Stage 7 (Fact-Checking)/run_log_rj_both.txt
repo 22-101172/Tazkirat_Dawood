@@ -1,0 +1,536 @@
+SAMPLE_MODE (seed=42): 3 block(s) of 100 rows out of 7362 total.
+  - rows 204..303 (entry_id 39..52)
+  - rows 912..1011 (entry_id 197..217)
+  - rows 5238..5337 (entry_id 1304..1319)
+  [1/300] entry_id=39 papers=3 -> Insufficient Evidence
+  [2/300] entry_id=39 papers=9 -> Insufficient Evidence
+  [3/300] entry_id=39 papers=2 -> Insufficient Evidence
+  [4/300] entry_id=39 papers=5 -> Insufficient Evidence
+  [5/300] entry_id=39 papers=4 -> Insufficient Evidence
+  [6/300] entry_id=39 papers=10 -> Insufficient Evidence
+  [7/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [8/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [9/300] entry_id=43 papers=10 -> Strongly Disagree
+  [10/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [11/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [12/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [13/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [14/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [15/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [16/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [17/300] entry_id=46 papers=10 -> Agree
+  [18/300] entry_id=46 papers=10 -> Agree
+  [19/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [20/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [21/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [22/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [23/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [24/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [25/300] entry_id=46 papers=10 -> Agree
+  [26/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [27/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [28/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [29/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [30/300] entry_id=46 papers=10 -> Insufficient Evidence
+  [31/300] entry_id=46 papers=9 -> Insufficient Evidence
+  [32/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [33/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [34/300] entry_id=47 papers=7 -> Insufficient Evidence
+  [35/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [36/300] entry_id=47 papers=4 -> Insufficient Evidence
+  [37/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [38/300] entry_id=47 papers=4 -> Insufficient Evidence
+  [39/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [40/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [41/300] entry_id=47 papers=10 -> Insufficient Evidence
+  [42/300] entry_id=48 papers=10 -> Insufficient Evidence
+  [43/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [44/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [45/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [46/300] entry_id=48 papers=10 -> Insufficient Evidence
+  [47/300] entry_id=48 papers=10 -> Insufficient Evidence
+  [48/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [49/300] entry_id=48 papers=10 -> Insufficient Evidence
+  [50/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [51/300] entry_id=48 papers=6 -> Neutral
+  [52/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [53/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [54/300] entry_id=48 papers=10 -> Neutral
+  [55/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [56/300] entry_id=48 papers=9 -> Neutral
+  [57/300] entry_id=48 papers=10 -> Insufficient Evidence
+  [58/300] entry_id=49 papers=8 -> Insufficient Evidence
+  [59/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [60/300] entry_id=49 papers=5 -> Insufficient Evidence
+  [61/300] entry_id=49 papers=1 -> Insufficient Evidence
+  [62/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [63/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [64/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [65/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [66/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [67/300] entry_id=50 papers=1 -> Insufficient Evidence
+  [68/300] entry_id=50 papers=4 -> Insufficient Evidence
+  [69/300] entry_id=50 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85847s exceeds cap (60.0s) -- backend is rate-limiting this
+  [70/300] entry_id=50 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85836s exceeds cap (60.0s) -- backend is rate-limiting this
+  [71/300] entry_id=50 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85835s exceeds cap (60.0s) -- backend is rate-limiting this
+  [72/300] entry_id=50 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85834s exceeds cap (60.0s) -- backend is rate-limiting this
+  [73/300] entry_id=50 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85833s exceeds cap (60.0s) -- backend is rate-limiting this
+  [74/300] entry_id=50 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85832s exceeds cap (60.0s) -- backend is rate-limiting this
+  [75/300] entry_id=50 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85830s exceeds cap (60.0s) -- backend is rate-limiting this
+  [76/300] entry_id=50 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85823s exceeds cap (60.0s) -- backend is rate-limiting this
+  [77/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85814s exceeds cap (60.0s) -- backend is rate-limiting this
+  [78/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85806s exceeds cap (60.0s) -- backend is rate-limiting this
+  [79/300] entry_id=51 papers=10 -> Neutral
+    [openalex failed] 429 with Retry-After=85791s exceeds cap (60.0s) -- backend is rate-limiting this
+  [80/300] entry_id=51 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85781s exceeds cap (60.0s) -- backend is rate-limiting this
+  [81/300] entry_id=51 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85767s exceeds cap (60.0s) -- backend is rate-limiting this
+  [82/300] entry_id=51 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85760s exceeds cap (60.0s) -- backend is rate-limiting this
+  [83/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85752s exceeds cap (60.0s) -- backend is rate-limiting this
+  [84/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85744s exceeds cap (60.0s) -- backend is rate-limiting this
+  [85/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85737s exceeds cap (60.0s) -- backend is rate-limiting this
+  [86/300] entry_id=51 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85728s exceeds cap (60.0s) -- backend is rate-limiting this
+  [87/300] entry_id=51 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85720s exceeds cap (60.0s) -- backend is rate-limiting this
+  [88/300] entry_id=51 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85719s exceeds cap (60.0s) -- backend is rate-limiting this
+  [89/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85706s exceeds cap (60.0s) -- backend is rate-limiting this
+  [90/300] entry_id=51 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85705s exceeds cap (60.0s) -- backend is rate-limiting this
+  [91/300] entry_id=51 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85703s exceeds cap (60.0s) -- backend is rate-limiting this
+  [92/300] entry_id=51 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85698s exceeds cap (60.0s) -- backend is rate-limiting this
+  [93/300] entry_id=51 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85697s exceeds cap (60.0s) -- backend is rate-limiting this
+  [94/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85688s exceeds cap (60.0s) -- backend is rate-limiting this
+  [95/300] entry_id=51 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85677s exceeds cap (60.0s) -- backend is rate-limiting this
+  [96/300] entry_id=51 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85667s exceeds cap (60.0s) -- backend is rate-limiting this
+  [97/300] entry_id=51 papers=9 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85660s exceeds cap (60.0s) -- backend is rate-limiting this
+  [98/300] entry_id=51 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85654s exceeds cap (60.0s) -- backend is rate-limiting this
+  [99/300] entry_id=51 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85645s exceeds cap (60.0s) -- backend is rate-limiting this
+  [100/300] entry_id=52 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85640s exceeds cap (60.0s) -- backend is rate-limiting this
+  [101/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85630s exceeds cap (60.0s) -- backend is rate-limiting this
+  [102/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85621s exceeds cap (60.0s) -- backend is rate-limiting this
+  [103/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85612s exceeds cap (60.0s) -- backend is rate-limiting this
+  [104/300] entry_id=197 papers=8 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85605s exceeds cap (60.0s) -- backend is rate-limiting this
+  [105/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85595s exceeds cap (60.0s) -- backend is rate-limiting this
+  [106/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85586s exceeds cap (60.0s) -- backend is rate-limiting this
+  [107/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85578s exceeds cap (60.0s) -- backend is rate-limiting this
+  [108/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85568s exceeds cap (60.0s) -- backend is rate-limiting this
+  [109/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85561s exceeds cap (60.0s) -- backend is rate-limiting this
+  [110/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85548s exceeds cap (60.0s) -- backend is rate-limiting this
+  [111/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85534s exceeds cap (60.0s) -- backend is rate-limiting this
+  [112/300] entry_id=197 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85524s exceeds cap (60.0s) -- backend is rate-limiting this
+  [113/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85516s exceeds cap (60.0s) -- backend is rate-limiting this
+  [114/300] entry_id=197 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85515s exceeds cap (60.0s) -- backend is rate-limiting this
+  [115/300] entry_id=197 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85483s exceeds cap (60.0s) -- backend is rate-limiting this
+  [116/300] entry_id=198 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85473s exceeds cap (60.0s) -- backend is rate-limiting this
+  [117/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85472s exceeds cap (60.0s) -- backend is rate-limiting this
+  [118/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85471s exceeds cap (60.0s) -- backend is rate-limiting this
+  [119/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85469s exceeds cap (60.0s) -- backend is rate-limiting this
+  [120/300] entry_id=198 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85461s exceeds cap (60.0s) -- backend is rate-limiting this
+  [121/300] entry_id=198 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85452s exceeds cap (60.0s) -- backend is rate-limiting this
+  [122/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85451s exceeds cap (60.0s) -- backend is rate-limiting this
+  [123/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85450s exceeds cap (60.0s) -- backend is rate-limiting this
+  [124/300] entry_id=198 papers=7 -> Neutral
+    [openalex failed] 429 with Retry-After=85435s exceeds cap (60.0s) -- backend is rate-limiting this
+  [125/300] entry_id=198 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85425s exceeds cap (60.0s) -- backend is rate-limiting this
+  [126/300] entry_id=198 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85415s exceeds cap (60.0s) -- backend is rate-limiting this
+  [127/300] entry_id=198 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85408s exceeds cap (60.0s) -- backend is rate-limiting this
+  [128/300] entry_id=198 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85402s exceeds cap (60.0s) -- backend is rate-limiting this
+  [129/300] entry_id=198 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85401s exceeds cap (60.0s) -- backend is rate-limiting this
+  [130/300] entry_id=199 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85390s exceeds cap (60.0s) -- backend is rate-limiting this
+  [131/300] entry_id=199 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85389s exceeds cap (60.0s) -- backend is rate-limiting this
+  [132/300] entry_id=199 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85372s exceeds cap (60.0s) -- backend is rate-limiting this
+  [133/300] entry_id=199 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85371s exceeds cap (60.0s) -- backend is rate-limiting this
+  [134/300] entry_id=199 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85362s exceeds cap (60.0s) -- backend is rate-limiting this
+  [135/300] entry_id=199 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85361s exceeds cap (60.0s) -- backend is rate-limiting this
+  [136/300] entry_id=199 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85351s exceeds cap (60.0s) -- backend is rate-limiting this
+  [137/300] entry_id=199 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85345s exceeds cap (60.0s) -- backend is rate-limiting this
+  [138/300] entry_id=199 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85344s exceeds cap (60.0s) -- backend is rate-limiting this
+  [139/300] entry_id=199 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85337s exceeds cap (60.0s) -- backend is rate-limiting this
+  [140/300] entry_id=199 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85328s exceeds cap (60.0s) -- backend is rate-limiting this
+  [141/300] entry_id=199 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85322s exceeds cap (60.0s) -- backend is rate-limiting this
+  [142/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85312s exceeds cap (60.0s) -- backend is rate-limiting this
+  [143/300] entry_id=203 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85304s exceeds cap (60.0s) -- backend is rate-limiting this
+  [144/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85296s exceeds cap (60.0s) -- backend is rate-limiting this
+  [145/300] entry_id=203 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85288s exceeds cap (60.0s) -- backend is rate-limiting this
+  [146/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85281s exceeds cap (60.0s) -- backend is rate-limiting this
+  [147/300] entry_id=203 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85273s exceeds cap (60.0s) -- backend is rate-limiting this
+  [148/300] entry_id=203 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85264s exceeds cap (60.0s) -- backend is rate-limiting this
+  [149/300] entry_id=203 papers=9 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85256s exceeds cap (60.0s) -- backend is rate-limiting this
+  [150/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85246s exceeds cap (60.0s) -- backend is rate-limiting this
+  [151/300] entry_id=203 papers=10 -> Strongly Agree
+    [openalex failed] 429 with Retry-After=85237s exceeds cap (60.0s) -- backend is rate-limiting this
+  [152/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85230s exceeds cap (60.0s) -- backend is rate-limiting this
+  [153/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85220s exceeds cap (60.0s) -- backend is rate-limiting this
+  [154/300] entry_id=203 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85213s exceeds cap (60.0s) -- backend is rate-limiting this
+  [155/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85200s exceeds cap (60.0s) -- backend is rate-limiting this
+  [156/300] entry_id=203 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85184s exceeds cap (60.0s) -- backend is rate-limiting this
+  [157/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85174s exceeds cap (60.0s) -- backend is rate-limiting this
+  [158/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85166s exceeds cap (60.0s) -- backend is rate-limiting this
+  [159/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85156s exceeds cap (60.0s) -- backend is rate-limiting this
+  [160/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85149s exceeds cap (60.0s) -- backend is rate-limiting this
+  [161/300] entry_id=203 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85148s exceeds cap (60.0s) -- backend is rate-limiting this
+  [162/300] entry_id=203 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=85138s exceeds cap (60.0s) -- backend is rate-limiting this
+  [163/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85128s exceeds cap (60.0s) -- backend is rate-limiting this
+  [164/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85119s exceeds cap (60.0s) -- backend is rate-limiting this
+  [165/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85107s exceeds cap (60.0s) -- backend is rate-limiting this
+  [166/300] entry_id=203 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85099s exceeds cap (60.0s) -- backend is rate-limiting this
+  [167/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85093s exceeds cap (60.0s) -- backend is rate-limiting this
+  [168/300] entry_id=215 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85087s exceeds cap (60.0s) -- backend is rate-limiting this
+  [169/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85082s exceeds cap (60.0s) -- backend is rate-limiting this
+  [170/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85076s exceeds cap (60.0s) -- backend is rate-limiting this
+  [171/300] entry_id=215 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85075s exceeds cap (60.0s) -- backend is rate-limiting this
+  [172/300] entry_id=215 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85074s exceeds cap (60.0s) -- backend is rate-limiting this
+  [173/300] entry_id=215 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85067s exceeds cap (60.0s) -- backend is rate-limiting this
+  [174/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85061s exceeds cap (60.0s) -- backend is rate-limiting this
+  [175/300] entry_id=215 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85060s exceeds cap (60.0s) -- backend is rate-limiting this
+  [176/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85054s exceeds cap (60.0s) -- backend is rate-limiting this
+  [177/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85049s exceeds cap (60.0s) -- backend is rate-limiting this
+  [178/300] entry_id=215 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85048s exceeds cap (60.0s) -- backend is rate-limiting this
+  [179/300] entry_id=215 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85041s exceeds cap (60.0s) -- backend is rate-limiting this
+  [180/300] entry_id=215 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85040s exceeds cap (60.0s) -- backend is rate-limiting this
+  [181/300] entry_id=215 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85033s exceeds cap (60.0s) -- backend is rate-limiting this
+  [182/300] entry_id=215 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85026s exceeds cap (60.0s) -- backend is rate-limiting this
+  [183/300] entry_id=216 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85018s exceeds cap (60.0s) -- backend is rate-limiting this
+  [184/300] entry_id=216 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85013s exceeds cap (60.0s) -- backend is rate-limiting this
+  [185/300] entry_id=216 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=85004s exceeds cap (60.0s) -- backend is rate-limiting this
+  [186/300] entry_id=216 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84998s exceeds cap (60.0s) -- backend is rate-limiting this
+  [187/300] entry_id=216 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84991s exceeds cap (60.0s) -- backend is rate-limiting this
+  [188/300] entry_id=216 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84982s exceeds cap (60.0s) -- backend is rate-limiting this
+  [189/300] entry_id=216 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84981s exceeds cap (60.0s) -- backend is rate-limiting this
+  [190/300] entry_id=216 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84980s exceeds cap (60.0s) -- backend is rate-limiting this
+  [191/300] entry_id=216 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84970s exceeds cap (60.0s) -- backend is rate-limiting this
+  [192/300] entry_id=216 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84969s exceeds cap (60.0s) -- backend is rate-limiting this
+  [193/300] entry_id=216 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84968s exceeds cap (60.0s) -- backend is rate-limiting this
+  [194/300] entry_id=217 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84958s exceeds cap (60.0s) -- backend is rate-limiting this
+  [195/300] entry_id=217 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84949s exceeds cap (60.0s) -- backend is rate-limiting this
+  [196/300] entry_id=217 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84940s exceeds cap (60.0s) -- backend is rate-limiting this
+  [197/300] entry_id=217 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84923s exceeds cap (60.0s) -- backend is rate-limiting this
+  [198/300] entry_id=217 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84916s exceeds cap (60.0s) -- backend is rate-limiting this
+  [199/300] entry_id=217 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84915s exceeds cap (60.0s) -- backend is rate-limiting this
+  [200/300] entry_id=217 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84910s exceeds cap (60.0s) -- backend is rate-limiting this
+  [201/300] entry_id=1304 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84905s exceeds cap (60.0s) -- backend is rate-limiting this
+  [202/300] entry_id=1304 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84897s exceeds cap (60.0s) -- backend is rate-limiting this
+  [203/300] entry_id=1304 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84890s exceeds cap (60.0s) -- backend is rate-limiting this
+  [204/300] entry_id=1304 papers=7 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84882s exceeds cap (60.0s) -- backend is rate-limiting this
+  [205/300] entry_id=1304 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84871s exceeds cap (60.0s) -- backend is rate-limiting this
+  [206/300] entry_id=1304 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84870s exceeds cap (60.0s) -- backend is rate-limiting this
+  [207/300] entry_id=1304 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84869s exceeds cap (60.0s) -- backend is rate-limiting this
+  [208/300] entry_id=1304 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84868s exceeds cap (60.0s) -- backend is rate-limiting this
+  [209/300] entry_id=1304 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84860s exceeds cap (60.0s) -- backend is rate-limiting this
+  [210/300] entry_id=1304 papers=7 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84846s exceeds cap (60.0s) -- backend is rate-limiting this
+  [211/300] entry_id=1305 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84838s exceeds cap (60.0s) -- backend is rate-limiting this
+  [212/300] entry_id=1305 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84837s exceeds cap (60.0s) -- backend is rate-limiting this
+  [213/300] entry_id=1306 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84836s exceeds cap (60.0s) -- backend is rate-limiting this
+  [214/300] entry_id=1306 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84835s exceeds cap (60.0s) -- backend is rate-limiting this
+  [215/300] entry_id=1306 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84834s exceeds cap (60.0s) -- backend is rate-limiting this
+  [216/300] entry_id=1308 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84827s exceeds cap (60.0s) -- backend is rate-limiting this
+  [217/300] entry_id=1308 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84820s exceeds cap (60.0s) -- backend is rate-limiting this
+  [218/300] entry_id=1308 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84808s exceeds cap (60.0s) -- backend is rate-limiting this
+  [219/300] entry_id=1308 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84799s exceeds cap (60.0s) -- backend is rate-limiting this
+  [220/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84798s exceeds cap (60.0s) -- backend is rate-limiting this
+  [221/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84797s exceeds cap (60.0s) -- backend is rate-limiting this
+  [222/300] entry_id=1312 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84787s exceeds cap (60.0s) -- backend is rate-limiting this
+  [223/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84786s exceeds cap (60.0s) -- backend is rate-limiting this
+  [224/300] entry_id=1312 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84779s exceeds cap (60.0s) -- backend is rate-limiting this
+  [225/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84778s exceeds cap (60.0s) -- backend is rate-limiting this
+  [226/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84777s exceeds cap (60.0s) -- backend is rate-limiting this
+  [227/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84776s exceeds cap (60.0s) -- backend is rate-limiting this
+  [228/300] entry_id=1312 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84775s exceeds cap (60.0s) -- backend is rate-limiting this
+  [229/300] entry_id=1312 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84769s exceeds cap (60.0s) -- backend is rate-limiting this
+  [230/300] entry_id=1316 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84761s exceeds cap (60.0s) -- backend is rate-limiting this
+  [231/300] entry_id=1316 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84753s exceeds cap (60.0s) -- backend is rate-limiting this
+  [232/300] entry_id=1316 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=84741s exceeds cap (60.0s) -- backend is rate-limiting this
+  [233/300] entry_id=1316 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84726s exceeds cap (60.0s) -- backend is rate-limiting this
+  [234/300] entry_id=1316 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84719s exceeds cap (60.0s) -- backend is rate-limiting this
+  [235/300] entry_id=1316 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84712s exceeds cap (60.0s) -- backend is rate-limiting this
+  [236/300] entry_id=1316 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84705s exceeds cap (60.0s) -- backend is rate-limiting this
+  [237/300] entry_id=1316 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84704s exceeds cap (60.0s) -- backend is rate-limiting this
+  [238/300] entry_id=1316 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84696s exceeds cap (60.0s) -- backend is rate-limiting this
+  [239/300] entry_id=1316 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84686s exceeds cap (60.0s) -- backend is rate-limiting this
+  [240/300] entry_id=1316 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84679s exceeds cap (60.0s) -- backend is rate-limiting this
+  [241/300] entry_id=1316 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84667s exceeds cap (60.0s) -- backend is rate-limiting this
+  [242/300] entry_id=1316 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84661s exceeds cap (60.0s) -- backend is rate-limiting this
+  [243/300] entry_id=1316 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=84651s exceeds cap (60.0s) -- backend is rate-limiting this
+  [244/300] entry_id=1316 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84643s exceeds cap (60.0s) -- backend is rate-limiting this
+  [245/300] entry_id=1316 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84636s exceeds cap (60.0s) -- backend is rate-limiting this
+  [246/300] entry_id=1317 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84629s exceeds cap (60.0s) -- backend is rate-limiting this
+  [247/300] entry_id=1317 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84613s exceeds cap (60.0s) -- backend is rate-limiting this
+  [248/300] entry_id=1317 papers=5 -> Strongly Agree
+    [openalex failed] 429 with Retry-After=84606s exceeds cap (60.0s) -- backend is rate-limiting this
+  [249/300] entry_id=1317 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84605s exceeds cap (60.0s) -- backend is rate-limiting this
+  [250/300] entry_id=1317 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84598s exceeds cap (60.0s) -- backend is rate-limiting this
+  [251/300] entry_id=1317 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84591s exceeds cap (60.0s) -- backend is rate-limiting this
+  [252/300] entry_id=1317 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84584s exceeds cap (60.0s) -- backend is rate-limiting this
+  [253/300] entry_id=1317 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84576s exceeds cap (60.0s) -- backend is rate-limiting this
+  [254/300] entry_id=1317 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84568s exceeds cap (60.0s) -- backend is rate-limiting this
+  [255/300] entry_id=1317 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84559s exceeds cap (60.0s) -- backend is rate-limiting this
+  [256/300] entry_id=1317 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84549s exceeds cap (60.0s) -- backend is rate-limiting this
+  [257/300] entry_id=1317 papers=3 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84543s exceeds cap (60.0s) -- backend is rate-limiting this
+  [258/300] entry_id=1317 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84542s exceeds cap (60.0s) -- backend is rate-limiting this
+  [259/300] entry_id=1317 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84541s exceeds cap (60.0s) -- backend is rate-limiting this
+  [260/300] entry_id=1317 papers=1 -> Neutral
+    [openalex failed] 429 with Retry-After=84523s exceeds cap (60.0s) -- backend is rate-limiting this
+  [261/300] entry_id=1317 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84522s exceeds cap (60.0s) -- backend is rate-limiting this
+  [262/300] entry_id=1318 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84511s exceeds cap (60.0s) -- backend is rate-limiting this
+  [263/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84510s exceeds cap (60.0s) -- backend is rate-limiting this
+  [264/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84509s exceeds cap (60.0s) -- backend is rate-limiting this
+  [265/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84497s exceeds cap (60.0s) -- backend is rate-limiting this
+  [266/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84495s exceeds cap (60.0s) -- backend is rate-limiting this
+  [267/300] entry_id=1318 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84486s exceeds cap (60.0s) -- backend is rate-limiting this
+  [268/300] entry_id=1318 papers=2 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84479s exceeds cap (60.0s) -- backend is rate-limiting this
+  [269/300] entry_id=1318 papers=1 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84472s exceeds cap (60.0s) -- backend is rate-limiting this
+  [270/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84471s exceeds cap (60.0s) -- backend is rate-limiting this
+  [271/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84445s exceeds cap (60.0s) -- backend is rate-limiting this
+  [272/300] entry_id=1318 papers=10 -> Agree
+    [openalex failed] 429 with Retry-After=84427s exceeds cap (60.0s) -- backend is rate-limiting this
+  [273/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84416s exceeds cap (60.0s) -- backend is rate-limiting this
+  [274/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84403s exceeds cap (60.0s) -- backend is rate-limiting this
+  [275/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84394s exceeds cap (60.0s) -- backend is rate-limiting this
+  [276/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84386s exceeds cap (60.0s) -- backend is rate-limiting this
+  [277/300] entry_id=1318 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84379s exceeds cap (60.0s) -- backend is rate-limiting this
+  [278/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84368s exceeds cap (60.0s) -- backend is rate-limiting this
+  [279/300] entry_id=1318 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84361s exceeds cap (60.0s) -- backend is rate-limiting this
+  [280/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84353s exceeds cap (60.0s) -- backend is rate-limiting this
+  [281/300] entry_id=1318 papers=4 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84344s exceeds cap (60.0s) -- backend is rate-limiting this
+  [282/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84337s exceeds cap (60.0s) -- backend is rate-limiting this
+  [283/300] entry_id=1318 papers=5 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84330s exceeds cap (60.0s) -- backend is rate-limiting this
+  [284/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84322s exceeds cap (60.0s) -- backend is rate-limiting this
+  [285/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84320s exceeds cap (60.0s) -- backend is rate-limiting this
+  [286/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84309s exceeds cap (60.0s) -- backend is rate-limiting this
+  [287/300] entry_id=1318 papers=6 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84300s exceeds cap (60.0s) -- backend is rate-limiting this
+  [288/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84280s exceeds cap (60.0s) -- backend is rate-limiting this
+  [289/300] entry_id=1318 papers=0 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84279s exceeds cap (60.0s) -- backend is rate-limiting this
+  [290/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84271s exceeds cap (60.0s) -- backend is rate-limiting this
+  [291/300] entry_id=1318 papers=8 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84261s exceeds cap (60.0s) -- backend is rate-limiting this
+  [292/300] entry_id=1318 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84251s exceeds cap (60.0s) -- backend is rate-limiting this
+  [293/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84242s exceeds cap (60.0s) -- backend is rate-limiting this
+  [294/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84230s exceeds cap (60.0s) -- backend is rate-limiting this
+  [295/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84219s exceeds cap (60.0s) -- backend is rate-limiting this
+  [296/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84209s exceeds cap (60.0s) -- backend is rate-limiting this
+  [297/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84198s exceeds cap (60.0s) -- backend is rate-limiting this
+  [298/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84190s exceeds cap (60.0s) -- backend is rate-limiting this
+  [299/300] entry_id=1319 papers=10 -> Insufficient Evidence
+    [openalex failed] 429 with Retry-After=84171s exceeds cap (60.0s) -- backend is rate-limiting this
+  [300/300] entry_id=1319 papers=0 -> Insufficient Evidence
+Done. 300 total rows in /Users/mohanadeladl/Desktop/Tazkirat dawood/data/factcheck_retrieve_judge_v1.csv

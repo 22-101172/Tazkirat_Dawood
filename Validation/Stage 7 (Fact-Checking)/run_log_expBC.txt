@@ -1,0 +1,82 @@
+SAMPLE_MODE (seed=42): 3 block(s) of 100 rows out of 7362 total.
+  - rows 204..303 (entry_id 39..52)
+  - rows 912..1011 (entry_id 197..217)
+  - rows 5238..5337 (entry_id 1304..1319)
+  [1/300] entry_id=39 papers=3 -> Insufficient Evidence
+  [2/300] entry_id=39 papers=2 -> Insufficient Evidence
+  [3/300] entry_id=39 papers=6 -> Insufficient Evidence
+  [4/300] entry_id=39 papers=3 -> Insufficient Evidence
+  [5/300] entry_id=39 papers=4 -> Insufficient Evidence
+  [6/300] entry_id=39 papers=3 -> Insufficient Evidence
+  [7/300] entry_id=43 papers=10 -> Insufficient Evidence
+  [8/300] entry_id=43 papers=3 -> Insufficient Evidence
+  [9/300] entry_id=43 papers=0 -> No Modern Equivalent
+  [10/300] entry_id=43 papers=5 -> Disagree
+  [11/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [12/300] entry_id=43 papers=6 -> Strongly Agree
+  [13/300] entry_id=43 papers=2 -> Neutral
+  [14/300] entry_id=43 papers=5 -> Neutral
+  [15/300] entry_id=43 papers=3 -> Agree
+  [16/300] entry_id=43 papers=4 -> Insufficient Evidence
+  [17/300] entry_id=46 papers=1 -> Insufficient Evidence
+  [18/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [19/300] entry_id=46 papers=6 -> Strongly Agree
+  [20/300] entry_id=46 papers=2 -> Neutral
+  [21/300] entry_id=46 papers=3 -> Agree
+  [22/300] entry_id=46 papers=1 -> Insufficient Evidence
+  [23/300] entry_id=46 papers=3 -> Neutral
+  [24/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [25/300] entry_id=46 papers=1 -> Agree
+  [26/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [27/300] entry_id=46 papers=1 -> Disagree
+  [28/300] entry_id=46 papers=1 -> Insufficient Evidence
+  [29/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [30/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [31/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [32/300] entry_id=47 papers=3 -> Neutral
+  [33/300] entry_id=47 papers=6 -> Insufficient Evidence
+  [34/300] entry_id=47 papers=6 -> Strongly Disagree
+  [35/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [36/300] entry_id=47 papers=3 -> Insufficient Evidence
+  [37/300] entry_id=47 papers=7 -> Insufficient Evidence
+  [38/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [39/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [40/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [41/300] entry_id=47 papers=3 -> Neutral
+  [42/300] entry_id=48 papers=2 -> Neutral
+  [43/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [44/300] entry_id=48 papers=1 -> Neutral
+  [45/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [46/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [47/300] entry_id=48 papers=4 -> Neutral
+  [48/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [49/300] entry_id=48 papers=3 -> Neutral
+  [50/300] entry_id=48 papers=7 -> Agree
+  [51/300] entry_id=48 papers=2 -> Neutral
+  [52/300] entry_id=48 papers=2 -> Neutral
+  [53/300] entry_id=48 papers=2 -> Agree
+  [54/300] entry_id=48 papers=2 -> Neutral
+  [55/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [56/300] entry_id=48 papers=3 -> Neutral
+  [57/300] entry_id=48 papers=1 -> Neutral
+  [58/300] entry_id=49 papers=3 -> Agree
+  [59/300] entry_id=49 papers=2 -> Agree
+  [60/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [61/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [62/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [63/300] entry_id=49 papers=3 -> Neutral
+  [64/300] entry_id=49 papers=6 -> Agree
+  [65/300] entry_id=49 papers=3 -> Neutral
+  [66/300] entry_id=50 papers=6 -> Strongly Agree
+  [67/300] entry_id=50 papers=2 -> Neutral
+  [68/300] entry_id=50 papers=7 -> Neutral
+  [69/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [70/300] entry_id=50 papers=4 -> Neutral
+  [71/300] entry_id=50 papers=2 -> Agree
+  [72/300] entry_id=50 papers=1 -> Agree
+  [73/300] entry_id=50 papers=1 -> Neutral
+  [74/300] entry_id=50 papers=1 -> Insufficient Evidence
+  [75/300] entry_id=50 papers=3 -> Neutral
+  [76/300] entry_id=50 papers=2 -> Insufficient Evidence
+  [77/300] entry_id=51 papers=1 -> Neutral
+  [78/300] entry_id=51 papers=1 -> Neutral

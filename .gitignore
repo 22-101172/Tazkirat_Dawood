@@ -1,0 +1,10 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Local secrets (never commit real credentials)
+.env
+
+# OS
+.DS_Store

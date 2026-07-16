@@ -1,0 +1,306 @@
+SAMPLE_MODE (seed=42): 3 block(s) of 100 rows out of 7362 total.
+  - rows 204..303 (entry_id 39..52)
+  - rows 912..1011 (entry_id 197..217)
+  - rows 5238..5337 (entry_id 1304..1319)
+  [1/300] entry_id=39 papers=0 -> Insufficient Evidence
+  [2/300] entry_id=39 papers=0 -> Insufficient Evidence
+  [3/300] entry_id=39 papers=1 -> Insufficient Evidence
+  [4/300] entry_id=39 papers=4 -> Insufficient Evidence
+  [5/300] entry_id=39 papers=4 -> Insufficient Evidence
+  [6/300] entry_id=39 papers=5 -> Insufficient Evidence
+  [7/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [8/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [9/300] entry_id=43 papers=5 -> Strongly Disagree
+  [10/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [11/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [12/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [13/300] entry_id=43 papers=5 -> Agree
+  [14/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [15/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [16/300] entry_id=43 papers=5 -> Insufficient Evidence
+  [17/300] entry_id=46 papers=5 -> Agree
+  [18/300] entry_id=46 papers=5 -> Strongly Agree
+  [19/300] entry_id=46 papers=5 -> Insufficient Evidence
+  [20/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [21/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [22/300] entry_id=46 papers=5 -> Insufficient Evidence
+  [23/300] entry_id=46 papers=5 -> Agree
+  [24/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [25/300] entry_id=46 papers=5 -> Agree
+  [26/300] entry_id=46 papers=2 -> Insufficient Evidence
+  [27/300] entry_id=46 papers=0 -> Insufficient Evidence
+  [28/300] entry_id=46 papers=4 -> Insufficient Evidence
+  [29/300] entry_id=46 papers=5 -> Insufficient Evidence
+  [30/300] entry_id=46 papers=5 -> Insufficient Evidence
+  [31/300] entry_id=46 papers=5 -> Insufficient Evidence
+  [32/300] entry_id=47 papers=1 -> Insufficient Evidence
+  [33/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [34/300] entry_id=47 papers=5 -> Insufficient Evidence
+  [35/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [36/300] entry_id=47 papers=4 -> Insufficient Evidence
+  [37/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [38/300] entry_id=47 papers=3 -> Insufficient Evidence
+  [39/300] entry_id=47 papers=2 -> Insufficient Evidence
+  [40/300] entry_id=47 papers=0 -> Insufficient Evidence
+  [41/300] entry_id=47 papers=5 -> Insufficient Evidence
+  [42/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [43/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [44/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [45/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [46/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [47/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [48/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [49/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [50/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [51/300] entry_id=48 papers=1 -> Insufficient Evidence
+  [52/300] entry_id=48 papers=3 -> Insufficient Evidence
+  [53/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [54/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [55/300] entry_id=48 papers=0 -> Insufficient Evidence
+  [56/300] entry_id=48 papers=5 -> Agree
+  [57/300] entry_id=48 papers=5 -> Insufficient Evidence
+  [58/300] entry_id=49 papers=5 -> Insufficient Evidence
+  [59/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [60/300] entry_id=49 papers=5 -> Agree
+  [61/300] entry_id=49 papers=1 -> Insufficient Evidence
+  [62/300] entry_id=49 papers=1 -> Insufficient Evidence
+  [63/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [64/300] entry_id=49 papers=2 -> Insufficient Evidence
+  [65/300] entry_id=49 papers=0 -> Insufficient Evidence
+  [66/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [67/300] entry_id=50 papers=1 -> Insufficient Evidence
+  [68/300] entry_id=50 papers=4 -> Insufficient Evidence
+  [69/300] entry_id=50 papers=1 -> Insufficient Evidence
+  [70/300] entry_id=50 papers=4 -> Agree
+  [71/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [72/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [73/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [74/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [75/300] entry_id=50 papers=0 -> Insufficient Evidence
+  [76/300] entry_id=50 papers=2 -> Insufficient Evidence
+  [77/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [78/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [79/300] entry_id=51 papers=5 -> Agree
+  [80/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [81/300] entry_id=51 papers=5 -> Agree
+  [82/300] entry_id=51 papers=3 -> Insufficient Evidence
+  [83/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [84/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [85/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [86/300] entry_id=51 papers=5 -> Strongly Agree
+  [87/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [88/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [89/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [90/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [91/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [92/300] entry_id=51 papers=2 -> Insufficient Evidence
+  [93/300] entry_id=51 papers=0 -> Insufficient Evidence
+  [94/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [95/300] entry_id=51 papers=5 -> Agree
+  [96/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [97/300] entry_id=51 papers=5 -> Insufficient Evidence
+  [98/300] entry_id=51 papers=4 -> Insufficient Evidence
+  [99/300] entry_id=51 papers=5 -> Agree
+  [100/300] entry_id=52 papers=3 -> Insufficient Evidence
+  [101/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [102/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [103/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [104/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [105/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [106/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [107/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [108/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [109/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [110/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [111/300] entry_id=197 papers=5 -> Agree
+  [112/300] entry_id=197 papers=1 -> Insufficient Evidence
+  [113/300] entry_id=197 papers=5 -> Insufficient Evidence
+  [114/300] entry_id=197 papers=0 -> Insufficient Evidence
+  [115/300] entry_id=197 papers=5 -> Disagree
+  [116/300] entry_id=198 papers=5 -> Insufficient Evidence
+  [117/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [118/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [119/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [120/300] entry_id=198 papers=5 -> Insufficient Evidence
+  [121/300] entry_id=198 papers=1 -> Insufficient Evidence
+  [122/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [123/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [124/300] entry_id=198 papers=5 -> Agree
+  [125/300] entry_id=198 papers=2 -> Insufficient Evidence
+  [126/300] entry_id=198 papers=3 -> Insufficient Evidence
+  [127/300] entry_id=198 papers=5 -> Insufficient Evidence
+  [128/300] entry_id=198 papers=1 -> Insufficient Evidence
+  [129/300] entry_id=198 papers=0 -> Insufficient Evidence
+  [130/300] entry_id=199 papers=1 -> Neutral
+  [131/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [132/300] entry_id=199 papers=5 -> Insufficient Evidence
+  [133/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [134/300] entry_id=199 papers=5 -> Insufficient Evidence
+  [135/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [136/300] entry_id=199 papers=5 -> Insufficient Evidence
+  [137/300] entry_id=199 papers=3 -> Insufficient Evidence
+  [138/300] entry_id=199 papers=0 -> Insufficient Evidence
+  [139/300] entry_id=199 papers=2 -> Insufficient Evidence
+  [140/300] entry_id=199 papers=5 -> Insufficient Evidence
+  [141/300] entry_id=199 papers=2 -> Insufficient Evidence
+  [142/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [143/300] entry_id=203 papers=4 -> Insufficient Evidence
+  [144/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [145/300] entry_id=203 papers=1 -> Insufficient Evidence
+  [146/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [147/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [148/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [149/300] entry_id=203 papers=5 -> Insufficient Evidence
+    [http retry] backing off 2.0s (attempt 1)
+  [150/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [151/300] entry_id=203 papers=5 -> Agree
+  [152/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [153/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [154/300] entry_id=203 papers=2 -> Insufficient Evidence
+  [155/300] entry_id=203 papers=5 -> Agree
+  [156/300] entry_id=203 papers=5 -> Agree
+  [157/300] entry_id=203 papers=5 -> Agree
+  [158/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [159/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [160/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [161/300] entry_id=203 papers=0 -> Insufficient Evidence
+  [162/300] entry_id=203 papers=5 -> Agree
+  [163/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [164/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [165/300] entry_id=203 papers=5 -> Agree
+  [166/300] entry_id=203 papers=5 -> Insufficient Evidence
+  [167/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [168/300] entry_id=215 papers=2 -> Insufficient Evidence
+  [169/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [170/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [171/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [172/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [173/300] entry_id=215 papers=4 -> Insufficient Evidence
+  [174/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [175/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [176/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [177/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [178/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [179/300] entry_id=215 papers=1 -> Insufficient Evidence
+  [180/300] entry_id=215 papers=0 -> Insufficient Evidence
+  [181/300] entry_id=215 papers=4 -> Insufficient Evidence
+  [182/300] entry_id=215 papers=3 -> Insufficient Evidence
+  [183/300] entry_id=216 papers=3 -> Insufficient Evidence
+  [184/300] entry_id=216 papers=1 -> Insufficient Evidence
+  [185/300] entry_id=216 papers=5 -> Insufficient Evidence
+  [186/300] entry_id=216 papers=1 -> Insufficient Evidence
+  [187/300] entry_id=216 papers=4 -> Insufficient Evidence
+  [188/300] entry_id=216 papers=1 -> Insufficient Evidence
+  [189/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [190/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [191/300] entry_id=216 papers=5 -> Insufficient Evidence
+  [192/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [193/300] entry_id=216 papers=0 -> Insufficient Evidence
+  [194/300] entry_id=217 papers=5 -> Insufficient Evidence
+  [195/300] entry_id=217 papers=5 -> Insufficient Evidence
+  [196/300] entry_id=217 papers=5 -> Insufficient Evidence
+  [197/300] entry_id=217 papers=5 -> Insufficient Evidence
+  [198/300] entry_id=217 papers=1 -> Insufficient Evidence
+  [199/300] entry_id=217 papers=0 -> Insufficient Evidence
+  [200/300] entry_id=217 papers=2 -> Insufficient Evidence
+  [201/300] entry_id=1304 papers=1 -> Insufficient Evidence
+  [202/300] entry_id=1304 papers=3 -> Insufficient Evidence
+  [203/300] entry_id=1304 papers=5 -> Insufficient Evidence
+  [204/300] entry_id=1304 papers=5 -> Insufficient Evidence
+  [205/300] entry_id=1304 papers=5 -> Insufficient Evidence
+  [206/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [207/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [208/300] entry_id=1304 papers=0 -> Insufficient Evidence
+  [209/300] entry_id=1304 papers=5 -> Insufficient Evidence
+  [210/300] entry_id=1304 papers=5 -> Insufficient Evidence
+  [211/300] entry_id=1305 papers=4 -> Insufficient Evidence
+  [212/300] entry_id=1305 papers=0 -> Insufficient Evidence
+  [213/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [214/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [215/300] entry_id=1306 papers=0 -> Insufficient Evidence
+  [216/300] entry_id=1308 papers=3 -> Insufficient Evidence
+  [217/300] entry_id=1308 papers=5 -> Insufficient Evidence
+  [218/300] entry_id=1308 papers=5 -> Insufficient Evidence
+  [219/300] entry_id=1308 papers=5 -> Agree
+  [220/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [221/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [222/300] entry_id=1312 papers=4 -> Insufficient Evidence
+  [223/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [224/300] entry_id=1312 papers=1 -> Insufficient Evidence
+  [225/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [226/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [227/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [228/300] entry_id=1312 papers=0 -> Insufficient Evidence
+  [229/300] entry_id=1312 papers=1 -> Insufficient Evidence
+  [230/300] entry_id=1316 papers=2 -> Insufficient Evidence
+  [231/300] entry_id=1316 papers=5 -> Insufficient Evidence
+  [232/300] entry_id=1316 papers=5 -> Agree
+  [233/300] entry_id=1316 papers=5 -> Insufficient Evidence
+  [234/300] entry_id=1316 papers=2 -> Insufficient Evidence
+  [235/300] entry_id=1316 papers=2 -> Insufficient Evidence
+  [236/300] entry_id=1316 papers=4 -> Insufficient Evidence
+  [237/300] entry_id=1316 papers=0 -> Insufficient Evidence
+  [238/300] entry_id=1316 papers=4 -> Insufficient Evidence
+  [239/300] entry_id=1316 papers=5 -> Insufficient Evidence
+  [240/300] entry_id=1316 papers=3 -> Insufficient Evidence
+  [241/300] entry_id=1316 papers=5 -> Insufficient Evidence
+  [242/300] entry_id=1316 papers=2 -> Insufficient Evidence
+  [243/300] entry_id=1316 papers=5 -> Agree
+  [244/300] entry_id=1316 papers=3 -> Insufficient Evidence
+  [245/300] entry_id=1316 papers=5 -> Insufficient Evidence
+  [246/300] entry_id=1317 papers=4 -> Insufficient Evidence
+  [247/300] entry_id=1317 papers=5 -> Agree
+  [248/300] entry_id=1317 papers=5 -> Agree
+  [249/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [250/300] entry_id=1317 papers=2 -> Insufficient Evidence
+  [251/300] entry_id=1317 papers=1 -> Insufficient Evidence
+  [252/300] entry_id=1317 papers=2 -> Insufficient Evidence
+  [253/300] entry_id=1317 papers=4 -> Insufficient Evidence
+  [254/300] entry_id=1317 papers=5 -> Insufficient Evidence
+  [255/300] entry_id=1317 papers=4 -> Insufficient Evidence
+  [256/300] entry_id=1317 papers=5 -> Insufficient Evidence
+  [257/300] entry_id=1317 papers=3 -> Insufficient Evidence
+  [258/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [259/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [260/300] entry_id=1317 papers=1 -> Agree
+  [261/300] entry_id=1317 papers=0 -> Insufficient Evidence
+  [262/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [263/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [264/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [265/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [266/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [267/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [268/300] entry_id=1318 papers=2 -> Insufficient Evidence
+  [269/300] entry_id=1318 papers=1 -> Insufficient Evidence
+  [270/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [271/300] entry_id=1318 papers=5 -> Agree
+  [272/300] entry_id=1318 papers=5 -> Agree
+  [273/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [274/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [275/300] entry_id=1318 papers=5 -> Agree
+  [276/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [277/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [278/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [279/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [280/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [281/300] entry_id=1318 papers=4 -> Insufficient Evidence
+  [282/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [283/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [284/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [285/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [286/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [287/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [288/300] entry_id=1318 papers=5 -> Agree
+  [289/300] entry_id=1318 papers=0 -> Insufficient Evidence
+  [290/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [291/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [292/300] entry_id=1318 papers=5 -> Insufficient Evidence
+  [293/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [294/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [295/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [296/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [297/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [298/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [299/300] entry_id=1319 papers=5 -> Insufficient Evidence
+  [300/300] entry_id=1319 papers=0 -> Insufficient Evidence
+Done. 300 total rows in /Users/mohanadeladl/Desktop/Tazkirat dawood/data/factcheck_retrieve_judge_v1.csv

@@ -1,0 +1,14 @@
+SAMPLE_MODE enabled (seed=42): processing 3 block(s) of 100 rows out of 7362 total rows.
+  - rows 204..303 (entry_id 39..52)
+  - rows 912..1011 (entry_id 197..217)
+  - rows 5238..5337 (entry_id 1304..1319)
+  [23/300] entry_id=46 -> Insufficient Evidence (retried)
+  [37/300] entry_id=47 -> Insufficient Evidence (retried)
+  [68/300] entry_id=50 -> Neutral
+  [69/300] entry_id=50 -> Neutral
+  [99/300] entry_id=51 -> Insufficient Evidence (retried)
+  [106/300] entry_id=197 -> Insufficient Evidence (retried)
+  [143/300] entry_id=203 -> Agree
+  [220/300] entry_id=1312 -> Insufficient Evidence (retried)
+  [255/300] entry_id=1317 -> Agree (retried)
+Done. 300 total rows in /Users/mohanadeladl/Desktop/Tazkirat dawood/data/factcheck_credible_v1.csv

@@ -1,0 +1,103 @@
+entry_id,arabic_name,scientific_name,disease_or_condition_en,treatment_method_en,verdict,confidence,reason,credible_sources,credibility_check,retried,needs_human_review
+39,أرجوان,Cercis siliquastrum,"Coldness of the stomach, kidneys, and liver",As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+39,أرجوان,Cercis siliquastrum,Skin dullness,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+39,أرجوان,Cercis siliquastrum,Respiratory and gastric impurities,Decoction (boiled plant),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+39,أرجوان,Cercis siliquastrum,Hemorrhage,Ashes (burnt plant),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+39,أرجوان,Cercis siliquastrum,Infertility or emaciation,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+39,أرجوان,Cercis siliquastrum,Nausea (plant-induced),Leaves of العناب and النمام,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Obstructions,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Waste retention,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Toxins,"Juice, decoction, and oral administration",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Nausea,Liniment (topical application),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Calculi (kidney and bladder stones),As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Scrofula (lymphadenopathy),As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Headache,Affusion (washing and pouring the decoction over the head),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Poisoning from ingesting the fruit of this plant,"Emesis, drinking milk, and eating التفاح and الرمان",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Scalp ulcers,Ashes (burnt plant) and juice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+43,أرسطونوجيا,Melia azedarach,Short hair (desire for growth),"Application to the hair with المرادسنج and دهن الورد, washing the head every 3 days",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Respiratory disorders,Eaten raw or cooked,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Inflammation,Eaten raw or cooked,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Polydipsia (excessive thirst),Eaten raw or cooked,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Pyrosis (heartburn),Eaten raw or cooked,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Bilious acrimony and bitterness,Eaten raw or cooked,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Fevers,By ingestion,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Jaundice,Drinking its juice with sugar (in the amount of 10 dirhams),ERROR,0.0,"expected string or bytes-like object, got 'NoneType'",,Error,False,False
+46,اسفاناخ,Spinacia oleracea,Orchialgia (testicular pain),Drinking its juice with sugar (in the amount of 10 dirhams),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Dysuria,Drinking its juice with sugar (in the amount of 10 dirhams),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Pediculosis (lice),Boiling its juice with Al-Zarawand and red arsenic,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Phlegmonous inflammations,Applied as a raw poultice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Wasp stings,Applied as a raw poultice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Abscesses and boils,Applied as a raw poultice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Cutaneous eruptions,Cooked and mashed with Al-Isfidaj and used as a topical application,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+46,اسفاناخ,Spinacia oleracea,Dyspepsia and slow digestion (for cold temperaments),Cooked with almond oil and Al-Qirfa (Al-Darsini),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,"Gastric, hepatic, renal, and splenic disorders (resulting from cold humors)",By ingestion,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Testicular swelling or congestion,By ingestion,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Dysuria,By ingestion,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,"Hip pain, sciatica, and gout",Drinking the infusion in juice for two months (in the amount of 3 mithqals in 4.5 ratls),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Sexual dysfunction,"By drinking, or as a poultice placed between the hips with camel or sheep milk",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Oligospermia,As the plant is generally used,ERROR,0.0,"expected string or bytes-like object, got 'NoneType'",,Error,False,False
+47,أسارون,Asarum europaeum,Accumulation of waste in the body,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Corneal diseases,Administered in ophthalmic medications (kohl),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Scorpion infestation,Using the plant smoke (fumigation),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+47,أسارون,Asarum europaeum,Lung damage,Corrected by *Miwizaj* (*Zabib al-jabal*),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Accumulation of waste in the brain,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Cardiac weakness and anguish,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,"Chest diseases, cough, and expectoration of phlegm",As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,"Obstructions and waste in the kidneys, spleen, stomach, and liver",Decoction or infusion in juice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Edema and swelling,Decoction or infusion in juice,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,All anal diseases,Orally or as a suppository with one-third part of *Qishr al-kundur*,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Corneal opacity and visual impairment,Used as an errhine (snuff) through the nose with honey water,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Colic and flatulence,Orally,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Vitiated humors and putrefaction,Taken with *Sekanjabin* and *Al-Milh al-Hindi*,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Headache and melancholia,Taken with *Sekanjabin* and *Al-Milh al-Hindi*,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Joint pain and tremors,Taken with *Sekanjabin* and *Al-Milh al-Hindi*,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,"Flatulence, neuralgia, and pleurodynia",Taken with syrup,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Chronic headache,Taken as a conserve with honey or sugar with persistent use,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,"Catarrh, ophthalmia, laxity, asthma, deafness, and visual impairment","Mixed or boiled with *Kizbarah*, *Marzanjush*, *Mustaki*, *Kabli*, and *Kundur*, used consistently at bedtime",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Distress and nausea,Corrected by taking *Sekanjabin*,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+48,اسطوخودس,Lavandula stoechas,Lung damage (as a side effect of the plant itself),Corrected by the consumption of الكثيراء or القنة or الحماما,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Pains,The root of the plant as a poultice wherever they are located,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Ascites,Ingesting the plant or using its coarse variety,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Insomnia,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Melancholia,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Hemorrhage,Ashes of the plant root,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Pruritus,Ashes of the plant root with ashes of palm fronds,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Scrofula (Cervical lymphadenitis),The root of the plant,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+49,أسل,Juncus acutus,Flaccid habitus,Sleeping on mats made from this plant,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Thick humors,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Swellings,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Toxins,As the plant is generally used,ERROR,0.0,"expected string or bytes-like object, got 'NoneType'",,Error,False,False
+50,اسليح,Cleome arabica,Flatulence,As the plant is generally used,ERROR,0.0,"expected string or bytes-like object, got 'NoneType'",,Error,False,False
+50,اسليح,Cleome arabica,Colic,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Arthralgia,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Orchitis,Used as a poultice and ingested,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Scrotal flatulence,"Taking equal parts of the plant and of الشيح and الترمس with a little الجندبادستر, prepared as pills of which 2 dirhams are swallowed daily",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Testicular ptosis (the need for elevation),Continued intake of the pills composed of the plant and of الشيح and الترمس and الجندبادستر,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Helminthiasis,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+50,اسليح,Cleome arabica,Lung damage,الصمغ is used with it,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Headache and catarrh,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Deafness,Ear drops,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Diarrhea and hemorrhage,In any form of use,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Calculi,Oral administration,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Uterine hemorrhage,Sitz bath in its decoction,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Rectal prolapse,Sitz bath in its decoction,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Hemorrhoids,Topical application (ointment),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Bone fracture,Oral administration,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Paronychia,Mixed with wax,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Thermal burns,Mixed with oil,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Scars and pruritus,Mixed with Armenian bole and vinegar,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Organ flaccidity,Oral administration,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Swelling,Oral administration,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Bromhidrosis,Oral administration,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Epidemic miasma and vermin,Fumigation,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Convalescent weakness,"Poultice with Al-Afs, Al-Adas, Al-Ward, and Al-Afaqia",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,"Pterygium, Al-laq, and epiphora",Its ash,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Hemorrhoids,"Powdered with Al-Sandarus, beetles, and cockroaches as fumigation",Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Alopecia,Soaked with Al-Amlaj for a week then cooked in sesame oil until the water evaporates,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Intoxication,Drinking its fruit decoction (fruit syrup) before consumption,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Visceral weakness,Drinking a decoction of its fruit (fruit syrup),Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Toxins and spider bites,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+51,أس,Myrtus communis,Pityriasis (dandruff or scalp lesions),As the plant is generally used,ERROR,0.0,"expected string or bytes-like object, got 'NoneType'",,Error,False,False
+52,آسيوس,Alcyonidium gelatinosum,Ulcers,External and internal use,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+197,بادروح,Ocimum basilicum,Chest pains,As the plant is generally used,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
+197,بادروح,Ocimum basilicum,Nasal obstruction,By inhalation,Insufficient Evidence,0.0,لم يتم العثور على مصدر علمي موثوق بعد محاولتين بحث.,,Failed after retry,True,True
