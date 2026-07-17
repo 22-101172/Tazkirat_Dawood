@@ -37,6 +37,26 @@ from google.genai import errors as genai_errors
 from google.auth import default as google_auth_default
 from google.auth.exceptions import DefaultCredentialsError
 
+
+# -----------------------------------------------------------------------------
+# Load a local .env (gitignored) so VERTEX_PROJECT_ID / CONTACT_EMAIL are set
+# without exporting them each run. Must run BEFORE the config below reads them.
+# -----------------------------------------------------------------------------
+def _load_dotenv():
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip())
+
+
+_load_dotenv()
+
 # -----------------------------------------------------------------------------
 # PATHS (local, same data dir as the grounding script)
 # -----------------------------------------------------------------------------
