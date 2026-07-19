@@ -107,6 +107,17 @@ OUTPUT_TAG = os.environ.get("EXP_TAG", "")  # suffix for the output filename
 # biomedical task, so europepmc-only is the decision.
 RETRIEVAL_SOURCE = "europepmc"
 
+# Plant NAME expansion: anchor each query on ALL the plant's validated literature
+# names, not just one. Built by build_plant_names.py (GBIF same-species verified,
+# hit-count filtered), so a plant studied under a synonym (e.g. chamomile as
+# "Matricaria recutita") is no longer missed. env EXP_NAMES=0 disables.
+USE_NAME_EXPANSION = os.environ.get("EXP_NAMES", "1") != "0"
+_PLANT_NAMES_FILE = os.path.join(DATA_DIR, "plant_names.json")
+_PLANT_NAMES = {}
+if USE_NAME_EXPANSION and os.path.exists(_PLANT_NAMES_FILE):
+    with open(_PLANT_NAMES_FILE, encoding="utf-8") as _f:
+        _PLANT_NAMES = json.load(_f)
+
 OPENALEX_BASE = "https://api.openalex.org/works"
 OPENALEX_MAILTO = os.environ.get("CONTACT_EMAIL", "your-email@example.com")  # "polite pool" contact; set via env
 EUROPEPMC_BASE = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
@@ -297,13 +308,24 @@ def _condition_clause(disease_en, terms):
     return f"({cond})" if cond else ""
 
 
+def _plant_clause(sci_name):
+    # OR together all validated literature names for the plant (name expansion);
+    # falls back to the single scientific name.
+    if USE_NAME_EXPANSION and sci_name:
+        names = (_PLANT_NAMES.get(sci_name, {}) or {}).get("names") or []
+        if len(names) > 1:
+            return "(" + " OR ".join(f'"{n}"' for n in names) + ")"
+    return f'"{sci_name}"' if sci_name else ""
+
+
 def _retrieve_europepmc(sci_name, common_name, disease_en, n, terms=None):
-    # Europe PMC ANDs terms; quote the scientific name and AND the (OR'd) condition.
+    # Europe PMC ANDs terms; anchor on the plant name-set and AND the (OR'd) condition.
     clause = _condition_clause(disease_en, terms)
-    if sci_name and clause:
-        query = f'"{sci_name}" AND {clause}'
-    elif sci_name:
-        query = f'"{sci_name}"'
+    plant = _plant_clause(sci_name)
+    if plant and clause:
+        query = f'{plant} AND {clause}'
+    elif plant:
+        query = plant
     else:
         query = clause
     params = {
@@ -433,7 +455,7 @@ def fetch_plant_compounds(sci_name, top=6):
 # EXPERIMENT C: broad-condition mapping. Instead of judging each hyper-specific
 # symptom, map it to a broad clinical category and evaluate at that level.
 # -----------------------------------------------------------------------------
-_BROAD_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=0))
+_BROAD_CONFIG = types.GenerateContentConfig(temperature=0, thinking_config=types.ThinkingConfig(thinking_budget=0))
 BROAD_CATEGORIES = ["Respiratory", "Digestive/Gastrointestinal", "Skin/Dermatological",
                     "Urinary/Renal", "Cardiovascular", "Musculoskeletal/Joint",
                     "Neurological", "Reproductive", "Metabolic/Endocrine",
@@ -459,7 +481,7 @@ def map_broad_category(disease_en):
 # STAGE 0: condition normalization -- archaic/compound condition -> modern search
 # terms, and detection of pure-humoral concepts with no modern equivalent.
 # -----------------------------------------------------------------------------
-_NORMALIZE_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=0))
+_NORMALIZE_CONFIG = types.GenerateContentConfig(temperature=0, thinking_config=types.ThinkingConfig(thinking_budget=0))
 
 
 def normalize_condition(disease_en):
@@ -531,7 +553,7 @@ Respond with ONLY the numbers of the relevant papers, comma-separated (e.g.
 # Relevance screening is a simple task -- disable the model's "thinking" for it
 # (cuts the filter call from ~43s to ~2.5s with no quality loss). The judge keeps
 # thinking enabled, where the extra reasoning is worth it.
-_FILTER_CONFIG = types.GenerateContentConfig(thinking_config=types.ThinkingConfig(thinking_budget=0))
+_FILTER_CONFIG = types.GenerateContentConfig(temperature=0, thinking_config=types.ThinkingConfig(thinking_budget=0))
 
 
 def filter_relevant_papers(sci_name, disease_en, papers):
@@ -712,9 +734,12 @@ def judge_row(arabic_name, sci_name, disease_en, treatment_en, effect_en, common
             return result, trace
         papers = relevant[:N_PAPERS]
 
-    # STAGE 2 -- judge on the filtered set.
+    # STAGE 2 -- judge on the filtered set. temperature=0 for reproducibility
+    # (thinking stays on -- reasoning helps here); greedy decoding kills the
+    # run-to-run verdict instability traced to sampling in the LLM stages.
     prompt = build_judge_prompt(arabic_name, sci_name, disease_en, treatment_en, effect_en, papers)
-    resp = llm_with_backoff(client.models.generate_content, model=JUDGE_MODEL, contents=prompt)
+    resp = llm_with_backoff(client.models.generate_content, model=JUDGE_MODEL, contents=prompt,
+                            config=types.GenerateContentConfig(temperature=0))
     parsed = parse_response(resp.text or "")
     trace["stages"]["judge"] = {"prompt": prompt, "response": resp.text or "",
                                 "papers_judged": _paper_meta(papers)}

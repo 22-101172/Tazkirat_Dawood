@@ -8,3 +8,6 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Large local reference material (source book PDF + full OCR); not committed
+tadhkirat_dawood_Drive/
