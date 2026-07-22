@@ -11,3 +11,16 @@ __pycache__/
 
 # Large local reference material (source book PDF + full OCR); not committed
 tadhkirat_dawood_Drive/
+
+# Stage 7: large / transient run artifacts kept local-only.
+# Full provenance traces are huge (the full-run trace is ~174MB, over GitHub's
+# 100MB limit); logs and progress files are transient. Result CSVs + the report
+# xlsx ARE committed. (Six sample traces were committed in an earlier session and
+# remain tracked; this only stops new ones.)
+factcheck_trace_v1_*.jsonl
+run_*.log
+factcheck_rj_progress_v1*.txt
+
+# Experiment snapshot backups (local-only)
+*_backup/
+*_backup.csv

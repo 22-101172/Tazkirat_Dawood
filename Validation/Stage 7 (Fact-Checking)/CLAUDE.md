@@ -4,6 +4,37 @@ Living document for this work. **Update the Session Log (bottom) after each mean
 
 ---
 
+## Reporting protocol (how to present results — follow every time)
+
+**The noise floor is ~7% row-level** (two identical runs at temperature=0 disagree on ~7% of
+rows; it was 18% before). Always judge results against it:
+- **Aggregate distributions are trustworthy** — flips cancel, so category %s wobble only ~1–2pt.
+  Report these with confidence.
+- **Per-claim verdicts are still ~7% unstable** — never present a single row's verdict as final
+  without noting this (consensus/majority-vote is the open fix for the per-claim deliverable).
+- A config's effect is **real only if its row-churn vs baseline clearly exceeds ~7%** AND the
+  aggregate moves beyond ~1–2pt. Otherwise call it noise. State this explicitly.
+
+**When reporting to the user:** (1) lead with the honest bottom line — real effect or noise;
+(2) show the category comparison; (3) explain the mechanism from retrieval stats (db-hits,
+papers-after-filter), not hand-waving; (4) flag caveats — never oversell, never cherry-pick
+(if showing one example, say it's an example and give the mixed reality); (5) recommend the
+next step. The user values blunt honesty over good news.
+
+**When drafting a message to Dr. Taher** (he gets a WhatsApp text, relayed by the user):
+- Plain text. **No emojis. No greeting** — open with "Update on the test" or go straight to
+  the point.
+- Numbers as plain-text lists or `before -> after` lines, **never markdown tables** (they don't
+  render in WhatsApp). Right-align mentally; keep it scannable.
+- Add a one-line legend for verdict categories he may not recall (Neutral, No Modern
+  Equivalent, Insufficient) when they appear.
+- Be honest about what's real vs noise vs a lateral move. Include a short "caveat" line.
+- End with **proposed next steps in priority order + your recommendation**.
+- Offer an Arabic version at the end.
+- Keep it tight and to the point — he is technical and busy.
+
+---
+
 ## Goal
 
 Validate the herb–disease treatment claims from *Tadhkirat Dawood al-Antaki* (a 17th-c.
@@ -33,39 +64,65 @@ Arabic materia medica) against modern scientific evidence, assigning each claim 
 3. **Judge** (LLM, thinking on) on the filtered papers → verdict + Arabic reason.
 
 - Model: `gemini-3-flash-preview` (Vertex AI, location `global`).
-- **ALL LLM stages run at `temperature=0`** (greedy) as of 2026-07-20 → pipeline is now
-  reproducible. (Before this, default temperature made normalization non-deterministic →
-  ~18% row-level verdict churn between identical runs.)
+- **ALL LLM stages run at `temperature=0`** (greedy) as of 2026-07-20. This roughly HALVED
+  the run-to-run noise (18% → ~7% row-level churn) but did NOT eliminate it — the pipeline is
+  **NOT fully deterministic**. Measured 2026-07-20: identical config, two runs, 7/100 rows flip
+  verdict (all adjacent-category boundary flips: Agree↔Neutral, Neutral↔Insufficient, SA↔Agree).
+  Gemini is not bit-reproducible even at greedy decoding. So "one run each suffices" is FALSE;
+  a residual ~7% noise floor remains and majority-vote/consensus is still the lever to kill it.
 - Every row fully traced to `data/factcheck_trace_v1<tag>.jsonl` (all prompts, raw
   responses, query string, papers found/kept). Fail-safe: append + flush + fsync per row.
 
-## Current results (300-row sample)
+## Current results (300-row sample) — RE-MEASURED at temperature=0 (2026-07-20)
 
-Aggregate distribution (baseline, ~unchanged by naming; enrichment shifts Insufficient→Neutral):
+Runs: `base_det` (names off, enrich off), `names_det` (names on), `enr_det` (enrich on, llm
+distinctive compounds). One run each, full 300 rows, 0 errors. Noise floor from `base_det2`
+(identical config re-run, 100-row every-3rd subset) = **7.0% row-level self-churn**.
 
-| Category | Baseline | Enriched-distinctive | Name-expansion |
+| Category | Baseline | Name-expansion | Enriched-distinctive |
 |---|---:|---:|---:|
-| Strongly Agree | 4.3% | 3.7% | 4.7% |
-| Agree | 8.7% | 7.5% | 8.3% |
-| Neutral | 27.2% | 36.0% | 29.0% |
-| Disagree | 1.0% | 1.3% | 0.3% |
-| Strongly Disagree | 1.2% | 0.1% | 1.0% |
-| No Modern Equivalent | 1.3% | 1.0% | 1.3% |
-| Insufficient Evidence | 56.3% | 50.2% | 55.3% |
+| Strongly Agree | 5.3% | 4.7% | 3.7% |
+| Agree | 8.7% | 9.0% | 7.3% |
+| Neutral | 27.0% | 28.7% | 37.0% |
+| Disagree | 1.3% | 1.0% | 0.7% |
+| Strongly Disagree | 1.0% | 0.7% | 0.7% |
+| No Modern Equivalent | 1.0% | 0.7% | 1.0% |
+| Insufficient Evidence | 55.7% | 55.3% | 49.7% |
 
-**IMPORTANT (2026-07-20):** the naming and enriched numbers above were measured BEFORE the
-temperature=0 fix, when a ~18% row-level noise floor buried real effects. They should be
-**re-measured now that the pipeline is deterministic** — that is the immediate next task.
-Retrieval recall from naming is real (+44% chamomile, +143% Dioscorea) but the 25-paper cap
-means extra names reshuffle rather than add — needs the per-name-merge fix to reach the judge.
+Row-level churn vs baseline: **names = 12.7%** (barely above the 7% noise floor → ~5.7pp real),
+**enriched = 33.8%** (well above floor → real). Retrieval means: baseline retrieved 15.9 /
+after-filter 2.33 / db-hits 98.9; enriched retrieved 19.3 / after-filter **1.73** / db-hits **287.5**.
 
-**Enrichment's only above-noise effect:** moves ~6 pts Insufficient → Neutral (+8.8 Neutral,
-−6.1 Insufficient). It does NOT increase confident verdicts (Agree/SA flat within noise).
-It surfaces mechanism/pharmacology papers = "plausible but unproven", not proof.
+**Verdict — which improvements are real:**
+- **Name expansion (as wired): NOT a real verdict change.** Aggregate is flat (Neutral +1.7,
+  Insufficient −0.4, both within noise) and row-churn (12.7%) barely clears the 7% floor. The
+  +44–143% retrieval recall is real but stuck behind the 25-paper cap (extra names reshuffle,
+  don't add). Keep it (methodologically correct), but it only matters AFTER the per-name-merge fix.
+- **Enrichment: a REAL but LATERAL effect.** db-hits ~3× (98.9→287.5) but after-filter DROPS
+  (2.33→1.73): the compound papers are mostly off-claim pharmacology, the filter discards more,
+  and the few that pass are mechanism papers → **Neutral**. Net: Neutral +10pp (27→37),
+  Insufficient −6pp, and confident verdicts (SA+Agree) slightly DROP (14.0→11.0). It converts
+  "no study" into "plausible but unproven" — it does NOT produce more confident agreement/refutation.
 
 The high Insufficient rate (~56%) is largely **genuine** — verified by reading papers: many
 obscure plant×condition pairs simply have no modern study. ≤10% Insufficient is not
 achievable without fabricating.
+
+## Cost model (measured 2026-07-20, from real `usage_metadata`)
+
+`gemini-3-flash-preview` on Vertex ≈ **$0.50/1M input, $3.00/1M output** (3rd-party aggregators;
+confirm vs actual billing). Per-stage tokens (representative random sample, baseline config):
+- normalize: in 222 / out 31 (thinking off) — 300 calls per 300 rows
+- filter: in 2,162 / out 4 (thinking off) — 267 calls
+- judge: in 1,923 / **out ~5,242 (of which ~5,056 are THINKING tokens)** — 193 calls
+- **Per row ≈ 3,383 in / 3,406 out.** Output (≈85% of cost) is dominated by the judge's thinking.
+
+Full file (7,362 rows), baseline config:
+- **×1 ≈ $88** (input $12 + output $75).  **×3 ≈ $263** (input $37 + output $226).
+- **$70 is NOT enough for even one full run.** The lever is the judge's thinking budget (currently
+  default/dynamic ~5k tok). Capping it (e.g. thinking_budget=0, like the filter) would cut output
+  ~10× → 3× full ≈ **~$45–50** (fits $70) — but must A/B on the sample first to confirm verdicts hold.
+  Enrichment config costs MORE (judges more rows). Only judged rows (~64%) incur the big thinking cost.
 
 ## Key files (in this folder)
 
@@ -122,10 +179,10 @@ python3 stage7_retrieve_judge.py         # reads .env automatically
 ## Next steps / open decisions (as of 2026-07-20, start of next session)
 
 **Immediate (do first):**
-1. **Re-measure baseline vs name-expansion vs enriched NOW that temperature=0 makes the
-   pipeline deterministic.** The prior numbers were taken under ~18% noise; the real effects
-   were buried. Re-run the 300 sample for each config (they'll now be reproducible, so one run
-   each suffices) and compare cleanly.
+1. ~~Re-measure baseline vs name-expansion vs enriched.~~ **DONE 2026-07-20** (see Current
+   results). CORRECTION: pipeline is NOT deterministic — ~7% residual noise floor remains at
+   temperature=0, so "one run suffices" was false. Name expansion = no real verdict change (yet);
+   enrichment = real but lateral (Insufficient→Neutral, no confident gain).
 
 **Then, two targeted fixes already scoped:**
 2. **Per-name merge** for name expansion: retrieve each plant name separately and merge the
@@ -152,6 +209,88 @@ committed — large + scanned-edition). Trace PDFs saved in `traces/`.
 ---
 
 ## Session Log (continued)
+
+- **2026-07-20 (later)** — Re-measuring baseline/name-expansion/enriched on the 300 sample
+  now that temperature=0 makes the pipeline deterministic (one run each suffices). Clean 3-way
+  design, each config differs from a common baseline by ONE toggle: `base_det` (EXP_NAMES=0,
+  no enrich), `names_det` (EXP_NAMES=1), `enr_det` (EXP_NAMES=0, EXP_ENRICH=1, COMPOUND_SET=llm
+  distinctive). Launched all three in parallel (distinct EXP_TAG → distinct output files, so
+  file-safe; the old corruption was two runs on the SAME csv). ~9s/row. Analysis pending.
+- **2026-07-20 (later, cont.)** — RESULTS IN + a big correction. Ran all three (300 rows, 0
+  errors) via `analyze_det_runs.py`. THEN checked the "deterministic" premise: re-ran baseline
+  (`base_det2`, every-3rd 100-row subset, identical config) → **7/100 rows still flip verdict**.
+  So temperature=0 did NOT make the pipeline deterministic; it halved the noise (18%→~7%) but a
+  residual floor remains (Gemini not bit-reproducible at greedy). All flips are adjacent-category
+  boundary calls. Corrected the CLAUDE.md body claims. FINDINGS vs the 7% floor: (1) name
+  expansion is NOT a real verdict change — aggregate flat, row-churn 12.7% barely clears floor;
+  recall gain is real but capped, needs per-name-merge to matter. (2) Enrichment IS real but
+  LATERAL — db-hits ~3× yet after-filter DROPS 2.33→1.73, shifting ~Insufficient→Neutral (+10pp
+  Neutral) while confident verdicts slightly drop; "plausible but unproven", not proof. So the
+  single-run aggregates are trustworthy (aggregates far more stable than row-churn) but row-level
+  reproducibility needs consensus/majority-vote. NEXT: proceed to the two scoped fixes
+  (per-name merge; safety-vs-efficacy judge). Consensus is re-opened as the noise-floor lever.
+- **2026-07-20 (later, cont.)** — COST MODEL measured (user asked: does $70 credit cover 3×
+  full runs?). Measured real `usage_metadata` on random samples of each stage. Answer: NO —
+  $70 covers neither 3× (~$263) nor even 1× (~$88) full run at current settings. Driver = the
+  judge's THINKING tokens (~5,056/claim, billed as output at $3/1M); output ≈85% of cost. Full
+  cost model written to the new "Cost model" section. KEY LEVER: capping the judge thinking
+  budget (like the filter) cuts output ~10× → 3× full ≈ $45–50 (fits $70), but needs a sample
+  A/B to confirm verdicts hold first. Pricing $0.50/$3.00 per 1M from 3rd-party aggregators —
+  confirm vs actual Vertex billing. Proposed next action: run the reduced-thinking A/B on the
+  300 sample (~$1–2) to see if the cheap 3× path is viable.
+- **2026-07-20 (later, cont.)** — DECISION (Dr. Taher, relayed by user): accept the ~7% variance
+  (no 3–5× consensus — too expensive) and DO THE FULL RUN. Rationale accepted: flips never cross
+  support↔contradiction (only strength wobbles at boundaries), aggregates stable ±1–2pt, and the
+  ~7% unstable rows = low-confidence/borderline claims → flag those for human review instead of
+  re-running. USER PERMISSION FOR FULL RUN: GRANTED (this satisfies the hard rule). Plan: single
+  full baseline run + borderline-flagging. BUDGET BLOCKER: full-thinking full run ≈ $88 > $70
+  credit → must use a leaner judge. Added env toggle `EXP_JUDGE_THINK` (caps judge thinking_budget;
+  built `_JUDGE_CONFIG`). Running an A/B first (`base_lean`, EXP_JUDGE_THINK=0, 300 sample) vs
+  `base_det` (full thinking): if churn ≈ the 7% floor, the leaner judge is statistically identical
+  → use it for the full run (≈$15–25, fits budget). Full run config = baseline (names off:
+  plant_names only has 25 plants; enrich off: lateral, not adopted). Heads-up: full run ≈ 18h
+  wall-clock single-process at ~9s/row (leaner judge should be faster). NOT launched yet —
+  awaiting A/B result + user go on runtime/thinking setting.
+- **2026-07-20 (later, cont.)** — Judge thinking-budget A/B (baseline, 300 sample) vs full-thinking
+  `base_det`: EXP_JUDGE_THINK=0 → **25.8% disagreement** (>> 7% floor) and a big aggregate shift
+  (Insufficient 56→42, Neutral 27→42) — thinking-off is systematically MORE LENIENT (calls
+  no-evidence "plausible"). No support↔contradiction crossings, but not a faithful substitute.
+  Was mid-testing 2048/3072 middle budgets when the user said STOP, then decided: **run the FULL
+  file at FULL cost/thinking; when credit runs out it pauses, user tops up and re-runs to finish.**
+- **2026-07-20 (later, cont.)** — FULL RUN LAUNCHED (user permission granted). Config: SAMPLE_MODE=0,
+  EXP_NAMES=0 (baseline), full dynamic thinking, EXP_TAG=full → `data/factcheck_retrieve_judge_v1_full.csv`
+  (+ `_full` trace/progress/log). Est ~$88 / ~18h. Made the run RESUME-ROBUST first (needed for the
+  top-up-and-continue plan): (1) SAMPLE_MODE is now an env toggle; (2) resume RE-ATTEMPTS ERROR/
+  PARSE_ERROR rows (previously they were marked done and skipped forever → would have silently
+  dropped every row after credit ran out); (3) circuit breaker aborts cleanly after 12 consecutive
+  failures (credit/quota exhaustion) instead of ERROR-flooding thousands of rows.
+  **RESUME PROCEDURE** (after topping up credit): re-run the EXACT same command —
+  `SAMPLE_MODE=0 EXP_NAMES=0 EXP_TAG=full python3 stage7_retrieve_judge.py` — done rows are skipped,
+  failed rows are re-attempted. Monitor: `data/factcheck_rj_progress_v1_full.txt`, log `data/run_full.log`.
+- **2026-07-22** — FULL RUN COMPLETE. All **7,362 rows, 0 errors**, no credit cutout (finished
+  before funds ran out → the ~$88 estimate was high; real judge-thinking averaged below the
+  20-sample figure). Output: `data/factcheck_retrieve_judge_v1_full.csv` (645 entries, 478 plants).
+  FINAL DISTRIBUTION: Strongly Agree 460 (6.2%), Agree 727 (9.9%), Neutral 1,747 (23.7%),
+  Disagree 95 (1.3%), Strongly Disagree 52 (0.7%), No Modern Equivalent 81 (1.1%), Insufficient
+  4,200 (57.0%). Supported 1,187 (16.1%) vs Refuted 147 (2.0%) → ~8:1. 65.1% reached the judge
+  with evidence. needs_human_review = 4,200 (all Insufficient). Matches the 300-sample within
+  ~1pt — no drift at scale. NEXT: (a) build the human-review shortlist (start with low-confidence
+  Neutral/Agree — the ~7% wobble lives there — and the 147 refutations for the safety-vs-efficacy
+  check); (b) the two scoped code fixes (per-name merge, safety-vs-efficacy) still pending;
+  (c) deliver summary to Dr. Taher. Git: committed through 2026-07-20; full-run outputs uncommitted.
+- **2026-07-22** — Dr. Taher REFRAMED the deliverable: stop dwelling on the 57% Insufficient;
+  instead ask "which heavily-researched modern diseases does the (already-validated) book answer?"
+  and start trusting the book — treat Insufficient/Neutral as credible untested LEADS, not
+  disproven. Built the disease-area view: heuristic keyword grouping of the archaic conditions
+  into 15 modern areas (`data/_full_themed.csv`, script `build_report.py`). Supported (1,187) by
+  area, top: Digestive/liver 202, Cancer/tumors 135, Infection/antimicrobial 108, Mental/neuro 87,
+  Respiratory 85, Skin 84. Highest research-volume matches (db_total_hits) are anti-tumor (Vitis,
+  Nigella, Punica), antioxidant/anti-toxin (Zingiber, Nigella, Allium), anti-inflammatory (Hordeum,
+  Spinacia), depression/anxiety (Hypericum). DELIVERABLE: `data/Stage7_book_answers_by_disease.xlsx`
+  (5 sheets: Read me, All claims 7362, By disease area, Confirmed 1187, Refuted 147). Summary counts
+  written as VALUES not COUNTIFS (no LibreOffice here to recalc formulas). Dr. Taher's point that
+  "Insufficient needs checking" ties to the per-name-merge recall fix — some Insufficient is
+  under-retrieval, not true absence. NEXT: per-name-merge fix; Arabic version of summary if asked.
 
 - **2026-07-20** — ROOT-CAUSED the 18% instability (Dr. Taher pushed back on the consensus
   band-aid). Isolated each stage on one claim, 5 repeats holding input fixed: RETRIEVAL

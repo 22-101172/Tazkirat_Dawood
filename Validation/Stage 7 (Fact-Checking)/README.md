@@ -1,54 +1,111 @@
-# Stage 7 — Fact-Checking with Credible Sources
+# Stage 7 — Fact-Checking the *Tadhkirat Dawood al-Antaki*
 
-Validates the herb–disease treatment claims from *Tadhkirat Dawood al-Antaki* against
-modern scientific evidence.
+Validating the herb–disease treatment claims of *Tadhkirat Dawood al-Antaki* (a 17th-century
+Arabic materia medica) against modern scientific evidence, and assigning each claim a verdict.
 
-## Approach (retrieve-then-judge)
+This folder contains the pipeline, the full-run results over all **7,362 claims**, and a
+disease-area report that reframes the results as **modern-backed answers + research leads**.
 
-Rather than asking an LLM to search the web (expensive, and the model won't reliably
-ground), the pipeline **pulls papers first, then feeds them to the model**:
+---
 
-1. **Normalize** the archaic/compound condition into modern search terms; pure humoral
-   concepts (e.g. "thick humors") are labelled *No Modern Equivalent*.
-2. **Retrieve** peer-reviewed papers from **Europe PMC** (free, no key; = PubMed +
-   preprints). Optional: enrich the query with the plant's distinctive compounds.
-3. **Filter** the retrieved pool down to papers actually relevant to the specific claim
-   (a fast, cheap LLM screen).
-4. **Judge** the claim on the filtered papers only, producing a verdict from a fixed
-   schema: Strongly Agree / Agree / Neutral / Disagree / Strongly Disagree /
-   Insufficient Evidence / No Modern Equivalent.
+## What was done
 
-Every row is fully traced (all prompts, raw responses, the search query, papers found
-and kept) to a fail-safe append-only JSONL for post-run analysis.
+A **retrieve-then-judge** pipeline (`stage7_retrieve_judge.py`). For each claim (a plant +
+a condition + a treatment method from the book):
 
-## Files
+0. **Normalize** the archaic/compound condition into modern search terms. Pure-humoral
+   concepts (e.g. "thick humors") are labelled `No Modern Equivalent`.
+1. **Retrieve** up to 25 papers from **Europe PMC** (= PubMed + preprints; free, no key).
+2. **Filter** (fast LLM) — keep only papers relevant to this specific claim.
+3. **Judge** (LLM, reasoning on) — read the filtered papers and assign a verdict + an
+   Arabic-language justification. The model only reads provided evidence; it does not browse.
 
-- `stage7_retrieve_judge.py` — the current pipeline (retrieve → filter → judge).
-- `stage7_factcheck.py` — the earlier Vertex AI + Google Search grounding version.
-- `build_distinctive_compounds.py` — builds per-plant distinctive-compound lists
-  (LLM picks vs. quantitative species-count ranking) from Wikidata.
-- `Stage7_FactCheck_CredibleSources.ipynb` — original Colab notebook.
-- `data/` — input CSVs, result CSVs, JSONL traces, and experiment backups.
+- Model: `gemini-3-flash-preview` (Vertex AI). All stages run at `temperature=0`.
+- Every claim is fully traced (prompts, papers found/kept, raw responses) for audit —
+  traces are kept **local-only** (too large for GitHub; see *What is not here*).
 
-## Setup
+## Headline results (full run, all 7,362 claims, 0 errors)
+
+| Verdict | Count | Share |
+|---|---:|---:|
+| Strongly Agree | 460 | 6.2% |
+| Agree | 727 | 9.9% |
+| Neutral | 1,747 | 23.7% |
+| Disagree | 95 | 1.3% |
+| Strongly Disagree | 52 | 0.7% |
+| No Modern Equivalent | 81 | 1.1% |
+| Insufficient Evidence | 4,200 | 57.0% |
+
+- **Supported 1,187 vs. refuted 147 — roughly 8:1.** Where modern science has looked, it
+  confirms the book far more often than it contradicts it.
+- **The 57% "Insufficient" is not the disease being obscure** — those conditions are heavily
+  researched today (of the top 40, 37 have >10,000 modern papers each: asthma, epilepsy,
+  gout, jaundice…). It means no study has tested the book's *specific plant* for that disease.
+  So this set is a bank of **research leads**: a validated plant + a well-studied disease +
+  no trial yet linking them.
+- Distribution matches the 300-claim pilot within ~1 point — no drift at scale.
+
+## Verdict schema
+
+- **Strongly Agree / Agree** — a modern study tested this plant on this condition and confirmed it.
+- **Neutral** — real condition with indirect/traditional support, but no direct modern trial (a *lead*).
+- **Disagree / Strongly Disagree** — evidence shows the plant ineffective or harmful for this use.
+- **No Modern Equivalent** — a purely humoral concept with no modern counterpart (untranslatable).
+- **Insufficient Evidence** — a real, modern condition, but no study exists for this specific plant.
+
+---
+
+## Key files
+
+| File | What it is |
+|---|---|
+| `stage7_retrieve_judge.py` | The pipeline (normalize → retrieve → filter → judge). |
+| `build_report.py` | Themes the conditions into disease areas and builds the Excel report. |
+| `analyze_det_runs.py` | Compares config runs (baseline / name-expansion / enriched). |
+| `build_distinctive_compounds.py` | Builds per-plant distinctive-compound lists (retrieval enrichment). |
+| `data/factcheck_retrieve_judge_v1_full.csv` | **The deliverable** — verdict + confidence + evidence + reason for all 7,362 claims. |
+| `data/_full_themed.csv` | The full CSV plus a `disease_area` column (generated by `build_report.py`). |
+| `data/Stage7_book_answers_by_disease.xlsx` | Report: overview, claims by disease area, confirmed set, refuted set. |
+| `CLAUDE.md` | Working notes / full session log — the detailed history and decisions. |
+
+## How to run
 
 ```bash
-python3 -m venv venv && source venv/bin/activate
-pip install -r requirements.txt
-gcloud auth application-default login          # one-time local ADC auth
-cp ".env.example" .env                         # then edit .env with your values
-export VERTEX_PROJECT_ID=... CONTACT_EMAIL=...  # or use the .env
+source ../../venv/bin/activate        # venv is at the repo root
+python3 stage7_retrieve_judge.py      # reads a local .env automatically
 ```
 
-## Run
+`.env` (gitignored) supplies `VERTEX_PROJECT_ID` and `CONTACT_EMAIL`; see `.env.example`.
+One-time auth: `gcloud auth application-default login`.
 
-`SAMPLE_MODE = True` in `stage7_retrieve_judge.py` processes a reproducible 300-row
-sample. **Do not run the full ~7,362-row file without intent** — flip `SAMPLE_MODE`
-to `False` only when you mean to.
+- **Sample (default):** a reproducible 300-row sample (`SAMPLE_MODE=1`).
+- **Full file:** `SAMPLE_MODE=0 EXP_TAG=full python3 stage7_retrieve_judge.py` (all 7,362 rows).
+  Resume-safe: every row is saved as it finishes; re-running the same command skips completed
+  rows and re-attempts any that errored (e.g. after a credit top-up). A circuit breaker stops
+  cleanly after a run of consecutive failures.
+- **Experiment toggles (env):** `EXP_NAMES=0` (disable plant-name expansion), `EXP_ENRICH=1`
+  (compound-widened retrieval), `EXP_JUDGE_THINK=<n>` (cap judge reasoning tokens), `EXP_TAG`.
+- Rebuild the report after a run: `python3 build_report.py`.
 
-```bash
-python3 stage7_retrieve_judge.py
-```
+## Reproducibility note — the ~7% noise floor
 
-Experiment toggles are environment-controlled, e.g.:
-`EXP_ENRICH=1 EXP_COMPOUND_SET=llm EXP_TAG=myrun python3 stage7_retrieve_judge.py`
+`temperature=0` roughly halved the run-to-run variance (from ~18% to ~7% of rows) but did
+**not** eliminate it: hosted LLMs are not bit-reproducible even at greedy decoding. Two
+identical runs disagree on ~7% of rows, always on **borderline, adjacent-category** cases
+(e.g. Agree↔Neutral) — never flipping support↔contradiction. **Aggregate distributions are
+stable (±1–2 points); individual borderline verdicts should be treated as review candidates.**
+
+## What is not here (local-only)
+
+- **Provenance traces** (`factcheck_trace_v1_*.jsonl`) — the full-run trace alone is ~174MB,
+  over GitHub's 100MB limit. Regenerable by re-running the pipeline.
+- **Run logs / progress files**, and experiment-snapshot backups.
+- **The source book PDF and full OCR** (`tadhkirat_dawood_Drive/`) — large scanned edition.
+
+## Caveats
+
+- The `disease_area` grouping is a **heuristic keyword mapping** of archaic conditions (~2%
+  land in "Other / general").
+- A small part of the Insufficient list is old humoral terms that are really "No Modern
+  Equivalent"; and some Insufficient cases reflect our search being too narrow (single plant
+  name) — a per-name-merge recall fix would recover part of them.

@@ -79,7 +79,9 @@ TRACE_FILE = os.path.join(DATA_DIR, f"factcheck_trace_v1{_SUFFIX}.jsonl")
 # SAMPLING (SAME seed/blocks as the grounding run -> identical 300 rows for a
 # fair head-to-head comparison)
 # -----------------------------------------------------------------------------
-SAMPLE_MODE = True
+# Default True (300-row sample). Set env SAMPLE_MODE=0 to process the FULL ~7,362-row file
+# (the deliverable). Kept as an env toggle so the file is never left stuck in full-file mode.
+SAMPLE_MODE = os.environ.get("SAMPLE_MODE", "1") != "0"
 SAMPLE_SEED = 42
 SAMPLE_NUM_BLOCKS = 3
 SAMPLE_BLOCK_SIZE = 100
@@ -146,6 +148,16 @@ NORMALIZE_MODEL = "gemini-3-flash-preview"
 NO_MODERN_EQUIVALENT = "No Modern Equivalent"  # distinct label for untranslatable humoral claims
 
 JUDGE_MODEL = "gemini-3-flash-preview"  # 3.0 Flash: fine for reading provided text (no grounding)
+
+# Judge thinking budget. Default = unset (model's dynamic thinking, ~5k tok/claim, the main
+# cost driver: output is billed at 6x input). Set env EXP_JUDGE_THINK to cap it (0 = off) so a
+# full-file run fits budget. Only lower this after an A/B on the sample confirms verdicts hold.
+_JUDGE_THINK = os.environ.get("EXP_JUDGE_THINK")
+if _JUDGE_THINK is not None and _JUDGE_THINK != "":
+    _JUDGE_CONFIG = types.GenerateContentConfig(
+        temperature=0, thinking_config=types.ThinkingConfig(thinking_budget=int(_JUDGE_THINK)))
+else:
+    _JUDGE_CONFIG = types.GenerateContentConfig(temperature=0)
 
 # -----------------------------------------------------------------------------
 # AUTH & CLIENT
@@ -739,7 +751,7 @@ def judge_row(arabic_name, sci_name, disease_en, treatment_en, effect_en, common
     # run-to-run verdict instability traced to sampling in the LLM stages.
     prompt = build_judge_prompt(arabic_name, sci_name, disease_en, treatment_en, effect_en, papers)
     resp = llm_with_backoff(client.models.generate_content, model=JUDGE_MODEL, contents=prompt,
-                            config=types.GenerateContentConfig(temperature=0))
+                            config=_JUDGE_CONFIG)
     parsed = parse_response(resp.text or "")
     trace["stages"]["judge"] = {"prompt": prompt, "response": resp.text or "",
                                 "papers_judged": _paper_meta(papers)}
@@ -806,11 +818,24 @@ def main():
 
     if os.path.exists(OUTPUT_CSV):
         done_df = pd.read_csv(OUTPUT_CSV)
+        # ERROR/PARSE_ERROR rows are NOT treated as done -- they are re-attempted on resume
+        # (e.g. after topping up exhausted credit). Drop them so they neither block
+        # reprocessing nor duplicate in the rewritten CSV.
+        retry_mask = done_df["verdict"].isin(["ERROR", "PARSE_ERROR"])
+        if retry_mask.any():
+            print(f"Resume: re-attempting {int(retry_mask.sum())} prior ERROR/PARSE_ERROR row(s).")
+        done_df = done_df[~retry_mask]
         done_ids = set(zip(done_df["entry_id"], done_df["disease_or_condition_en"]))
         results = done_df.to_dict("records")
     else:
         done_ids = set()
         results = []
+
+    # Circuit breaker: if this many rows fail in a row, the backend is almost certainly down
+    # (credit/quota exhausted) -- stop cleanly instead of flooding thousands of ERROR rows.
+    # Already-written rows are safe; ERROR rows are re-attempted on the next resume.
+    ABORT_AFTER_CONSECUTIVE_ERRORS = 12
+    consec_err = 0
 
     total = len(df_to_process)
     for n, (i, row) in enumerate(df_to_process.iterrows(), start=1):
@@ -831,6 +856,7 @@ def main():
                 effect_en=row["expected_effect_en"],
                 common_name=common,
             )
+            consec_err = 0
         except Exception as e:
             # Fail-safe: one row's failure never aborts the run; the error is
             # recorded in both the CSV and the trace so it is auditable.
@@ -841,6 +867,7 @@ def main():
             }
             trace = {"scientific_name": sci_name, "condition_original": row["disease_or_condition_en"],
                      "outcome": "error", "error": str(e), "traceback": _tb.format_exc()}
+            consec_err += 1
 
         record = {
             "entry_id": row["entry_id"],
@@ -873,6 +900,14 @@ def main():
             f.write(f"{n}/{total} rows processed (SAMPLE_MODE={SAMPLE_MODE})\n")
 
         print(f"  [{n}/{total}] entry_id={row['entry_id']} papers={result['n_papers']} -> {record['verdict']}")
+
+        if consec_err >= ABORT_AFTER_CONSECUTIVE_ERRORS:
+            sys.exit(
+                f"\n[ABORTED] {consec_err} consecutive row failures -- the model backend is "
+                f"likely unavailable (credit/quota exhausted).\nStopped cleanly; "
+                f"{len(results)} rows saved to {OUTPUT_CSV}.\nTo continue: top up credit and "
+                f"re-run the SAME command -- done rows are skipped and the failed rows are re-attempted."
+            )
 
         time.sleep(0.2)  # politeness throttle
 
